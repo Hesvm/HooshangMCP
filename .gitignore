@@ -17,6 +17,7 @@ session.json
 *.mp4
 *.webm
 *.mp3
+!assets/**
 downloads/
 temp/
 

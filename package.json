@@ -39,6 +39,7 @@
   "license": "MIT",
   "files": [
     "bin",
+    "assets",
     "data",
     "index.js",
     "api-client.js",
