@@ -1,0 +1,213 @@
+{
+  "providers": [
+    {
+      "id": "d02e406b-b56c-40b0-b758-7e4df1a28cd7",
+      "name": "anthropic",
+      "title": "Anthropic",
+      "iconUrl": "https://liara-s3.dastyar.io/icons/1776321987111_u49dmq_claude.png",
+      "models": [
+        {
+          "id": "22901eaa-e0d5-4589-bc31-b6c1fcb61e59",
+          "featureKey": "custom_model_22901eaa-e0d5-4589-bc31-b6c1fcb61e59",
+          "name": "anthropic/claude-opus-5.5",
+          "title": "Claude Opus 5.5",
+          "description": "غول مرحله آخر",
+          "creditCost": 80,
+          "inputTokenCost": "4",
+          "outputTokenCost": "20",
+          "perRequestCost": null,
+          "builtin_web_search": true,
+          "audio_support": true
+        },
+        {
+          "id": "828dd6ba-82cb-4652-91d8-25b9200c757a",
+          "featureKey": "custom_model_828dd6ba-82cb-4652-91d8-25b9200c757a",
+          "name": "anthropic/claude-sonnet-5.5",
+          "title": "Claude Sonnet 5.5",
+          "description": "همراه همه‌فن‌حریف برای کارهای روزمره، ایده‌پردازی، نوشتن و تحلیل.",
+          "creditCost": 35,
+          "inputTokenCost": "2",
+          "outputTokenCost": "10",
+          "perRequestCost": null,
+          "builtin_web_search": true,
+          "audio_support": true
+        }
+      ]
+    },
+    {
+      "id": "36311950-851c-4d75-ba16-a3fb8f3058e8",
+      "name": "openAI",
+      "title": "OpenAI",
+      "iconUrl": "https://liara-s3.dastyar.io/icons/1776322036007_ft6kqm_openai.png",
+      "models": [
+        {
+          "id": "7c9b3543-badc-4ecc-8648-5c050db0328d",
+          "featureKey": "custom_model_7c9b3543-badc-4ecc-8648-5c050db0328d",
+          "name": "openai/gpt-6.1-sol",
+          "title": "GPT 6.1 Sol",
+          "description": "پرچمدار openai مناسب کارهای خیلی عمیق",
+          "creditCost": 30,
+          "inputTokenCost": "2",
+          "outputTokenCost": "10",
+          "perRequestCost": null,
+          "builtin_web_search": true,
+          "audio_support": true
+        },
+        {
+          "id": "1fd1b7e7-fef7-4e21-9104-fc2481f7f127",
+          "featureKey": "custom_model_1fd1b7e7-fef7-4e21-9104-fc2481f7f127",
+          "name": "openai/gpt-6-luna",
+          "title": "GPT 6 Luna",
+          "description": "پرچمدار openai ولی برای استفاده سبک",
+          "creditCost": 2,
+          "inputTokenCost": "0.1",
+          "outputTokenCost": "0.5",
+          "perRequestCost": null,
+          "builtin_web_search": true,
+          "audio_support": true
+        }
+      ]
+    },
+    {
+      "id": "2ec1f4d2-50c1-430a-9081-307a870d7e0d",
+      "name": "google",
+      "title": "Google",
+      "iconUrl": "https://liara-s3.dastyar.io/icons/1776322026306_htsjat_gemini.webp",
+      "models": [
+        {
+          "id": "cd684bdb-9f94-447d-9d23-c3f89966592f",
+          "featureKey": "custom_model_cd684bdb-9f94-447d-9d23-c3f89966592f",
+          "name": "google/gemma-4-e4b-it",
+          "title": "Gemma 4 mini",
+          "description": "مدل ساده و کوچک گوگل",
+          "creditCost": 0,
+          "inputTokenCost": null,
+          "outputTokenCost": null,
+          "perRequestCost": null,
+          "builtin_web_search": true,
+          "audio_support": true
+        },
+        {
+          "id": "515aaed8-43f5-4e37-b7fe-929bc25858bf",
+          "featureKey": "custom_model_515aaed8-43f5-4e37-b7fe-929bc25858bf",
+          "name": "google/gemma-4-26b-a4b-it",
+          "title": "Gemma 4 26B",
+          "description": "مناسب کارهای دم دستی",
+          "creditCost": 1,
+          "inputTokenCost": "0.05",
+          "outputTokenCost": "0.22",
+          "perRequestCost": null,
+          "builtin_web_search": false,
+          "audio_support": true
+        },
+        {
+          "id": "2ff15510-e28c-4f51-83a0-e461fb95d111",
+          "featureKey": "custom_model_2ff15510-e28c-4f51-83a0-e461fb95d111",
+          "name": "google/gemini-pro-latest",
+          "title": "Gemini 3.1 Pro",
+          "description": "نسل جدید مدل‌های گوگل برای پروژه‌های حرفه‌ای و کارهای پیشرفته.",
+          "creditCost": 25,
+          "inputTokenCost": "2",
+          "outputTokenCost": "12",
+          "perRequestCost": null,
+          "builtin_web_search": true,
+          "audio_support": true
+        },
+        {
+          "id": "fb0d60aa-cea6-40e1-a71f-020111c743e1",
+          "featureKey": "custom_model_fb0d60aa-cea6-40e1-a71f-020111c743e1",
+          "name": "google/gemini-3.5-flash-lite",
+          "title": "Gemini 3.5 Flash Lite",
+          "description": "وقتی سرعت از همه‌چیز مهم‌تره، روی این مدل حساب کن.",
+          "creditCost": 5,
+          "inputTokenCost": "0.3",
+          "outputTokenCost": "2.5",
+          "perRequestCost": null,
+          "builtin_web_search": true,
+          "audio_support": true
+        },
+        {
+          "id": "ac5f625d-16a9-40dd-99dc-15a4bfd9b4b7",
+          "featureKey": "custom_model_ac5f625d-16a9-40dd-99dc-15a4bfd9b4b7",
+          "name": "google/gemini-3.8-flash",
+          "title": "Gemini 3.8 Flash",
+          "description": "سریع، منعطف و آماده امتحان کردن قابلیت‌های جدید.",
+          "creditCost": 5,
+          "inputTokenCost": "0.75",
+          "outputTokenCost": "3.75",
+          "perRequestCost": null,
+          "builtin_web_search": true,
+          "audio_support": true
+        }
+      ]
+    },
+    {
+      "id": "8594c2a6-dc57-4e2f-8fd1-a762d7d6ef4e",
+      "name": "Other",
+      "title": "other",
+      "iconUrl": null,
+      "models": [
+        {
+          "id": "878b4108-4056-4340-80c4-61f3cbb13661",
+          "featureKey": "custom_model_878b4108-4056-4340-80c4-61f3cbb13661",
+          "name": "deepseek/deepseek-v4.1-flash",
+          "title": "Deepseek V4.1 Flash",
+          "description": "دیپ سیک قوی و دوست داشتنی",
+          "creditCost": 3,
+          "inputTokenCost": "0.045",
+          "outputTokenCost": "0.89",
+          "perRequestCost": null,
+          "builtin_web_search": true,
+          "audio_support": true
+        },
+        {
+          "id": "25169f6d-3be8-496d-9d19-874663ef1716",
+          "featureKey": "custom_model_25169f6d-3be8-496d-9d19-874663ef1716",
+          "name": "xiaomi/mimo-v2.6-flash",
+          "title": "Xiaomi Mimo 2.6 Flash",
+          "description": null,
+          "creditCost": 2,
+          "inputTokenCost": null,
+          "outputTokenCost": null,
+          "perRequestCost": null,
+          "builtin_web_search": true,
+          "audio_support": true
+        },
+        {
+          "id": "603ff7da-8168-4906-8d2d-d0b7e37efabf",
+          "featureKey": "custom_model_603ff7da-8168-4906-8d2d-d0b7e37efabf",
+          "name": "qwen/qwen3.8-flash",
+          "title": "Qwen 3.8 Flash",
+          "description": "مدل خوبیه",
+          "creditCost": 1,
+          "inputTokenCost": "0.15",
+          "outputTokenCost": "0.47",
+          "perRequestCost": null,
+          "builtin_web_search": true,
+          "audio_support": true
+        },
+        {
+          "id": "42b4bfbd-dece-4c28-b186-8283073d5aa2",
+          "featureKey": "custom_model_42b4bfbd-dece-4c28-b186-8283073d5aa2",
+          "name": "z-ai/glm-5.3-flash",
+          "title": "GLM 5.3 Flash",
+          "description": "پرچمدار کش بازار",
+          "creditCost": 5,
+          "inputTokenCost": "0.07",
+          "outputTokenCost": "0.25",
+          "perRequestCost": null,
+          "builtin_web_search": true,
+          "audio_support": true
+        }
+      ]
+    }
+  ],
+  "defaultModels": {
+    "basic": "google/gemma-4-26b-a4b-it",
+    "small": "google/gemma-4-26b-a4b-it",
+    "pro": "deepseek/deepseek-v4.1-flash"
+  },
+  "webSearchToolMode": "in_house",
+  "pdfForceProChatEnabled": false,
+  "liveCallEnabled": false
+}

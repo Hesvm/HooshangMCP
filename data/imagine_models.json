@@ -1,0 +1,1688 @@
+[
+  {
+    "id": 150,
+    "title": "کمال",
+    "name": "kamal",
+    "description": "مدل لوکال هوشنگ، برای ساخت عکس از روی متن، سریع و ارزان",
+    "icon": {
+      "id": 886,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-19T08:24:56.241Z",
+      "createdAt": "2026-08-19T08:24:56.241Z",
+      "url": "https://blog.hooshang.ai/api/media/file/Kamal.png",
+      "thumbnailURL": null,
+      "filename": "Kamal.png",
+      "mimeType": "image/png",
+      "filesize": 4671,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "hooshang",
+    "type": "image",
+    "inputs": [
+      {
+        "id": "6a845613be527cb89369a8a2",
+        "fieldName": "ratio",
+        "label": "ابعاد تصویر",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "ابعاد تصویر",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a845622be527cb89369a8a3",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "6a84562dbe527cb89369a8a4",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6a845636be527cb89369a8a5",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          },
+          {
+            "id": "6a84563bbe527cb89369a8a6",
+            "label": "4:3",
+            "value": "4:3",
+            "credit": null
+          },
+          {
+            "id": "6a845641be527cb89369a8a7",
+            "label": "3:4",
+            "value": "3:4",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6a8ff3f52320f938c331a7e3",
+        "fieldName": "images[]",
+        "label": "تصاویر ورودی",
+        "type": "image",
+        "maxFiles": 4,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": []
+      }
+    ],
+    "credit": 5,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "high",
+      "speed": "fast",
+      "promptAdherence": "good",
+      "image": {
+        "persianText": true,
+        "accurateText": true,
+        "transparentBackground": true,
+        "imageEditing": true,
+        "characterConsistency": true,
+        "photorealistic": true,
+        "illustration": true,
+        "logoDesign": true,
+        "productPhotography": true
+      },
+      "notes": "It's a good competitive model. can be used for all kinds of purposes"
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-10-20T04:39:54.286Z",
+    "createdAt": "2026-08-18T12:56:35.873Z",
+    "startingCredit": 5,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_150",
+      "creditCost": 5,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 154,
+    "title": "GPT 2.5 Sunburst",
+    "name": "gpt-image-2.5-sunburst",
+    "description": "برای دقت بیشتر به جزئیات نسبت به مدل Flare",
+    "icon": {
+      "id": 721,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-11T13:45:57.822Z",
+      "createdAt": "2026-08-11T13:45:57.822Z",
+      "url": "https://blog.hooshang.ai/api/media/file/gpt-img-2-icon.png",
+      "thumbnailURL": null,
+      "filename": "gpt-img-2-icon.png",
+      "mimeType": "image/png",
+      "filesize": 8099,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "openai",
+    "type": "image",
+    "inputs": [
+      {
+        "id": "6aa0fd83040270001f011ef7",
+        "fieldName": "input_images[]",
+        "label": "تصویر ورودی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "عکس ورودی",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6aa0fd83040270001f011efd",
+        "fieldName": "quality",
+        "label": "کیفیت خروجی",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": "کیفیت خروجی",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6aa0fd83040270001f011ef8",
+            "label": "کیفیت پایین",
+            "value": "low",
+            "credit": 1
+          },
+          {
+            "id": "6aa0fd83040270001f011ef9",
+            "label": "کیفیت متوسط",
+            "value": "medium",
+            "credit": 4
+          },
+          {
+            "id": "6aa0fd83040270001f011efa",
+            "label": "کیفیت بالا",
+            "value": "high",
+            "credit": 10
+          },
+          {
+            "id": "6aa0fd83040270001f011efb",
+            "label": "کیفیت خیلی بالا",
+            "value": "xhigh",
+            "credit": 20
+          },
+          {
+            "id": "6aa0fd83040270001f011efc",
+            "label": "کیفیت اعلا (ماکس)",
+            "value": "max",
+            "credit": 40
+          }
+        ]
+      }
+    ],
+    "credit": 12,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "premium",
+      "speed": "slow",
+      "promptAdherence": "excellent",
+      "image": {
+        "persianText": true,
+        "accurateText": true,
+        "transparentBackground": true,
+        "imageEditing": true,
+        "characterConsistency": true,
+        "photorealistic": true,
+        "illustration": true,
+        "logoDesign": true,
+        "productPhotography": true
+      },
+      "notes": "بالاترین دقت در جزئیات "
+    },
+    "index": 0,
+    "status": "published",
+    "updatedAt": "2026-09-09T06:38:36.477Z",
+    "createdAt": "2026-09-09T06:32:35.147Z",
+    "startingCredit": 12,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_154",
+      "creditCost": 12,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 153,
+    "title": "GPT 2.5 Flare",
+    "name": "gpt-image-2.5-flare",
+    "description": "برای تصاویر واقع‌گرایانه، طراحی‌های دقیق و ادیت‌های پیچیده با کنترل بالا",
+    "icon": {
+      "id": 721,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-11T13:45:57.822Z",
+      "createdAt": "2026-08-11T13:45:57.822Z",
+      "url": "https://blog.hooshang.ai/api/media/file/gpt-img-2-icon.png",
+      "thumbnailURL": null,
+      "filename": "gpt-img-2-icon.png",
+      "mimeType": "image/png",
+      "filesize": 8099,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "openai",
+    "type": "image",
+    "inputs": [
+      {
+        "id": "6aa0fcc1040270001f011ef2",
+        "fieldName": "input_images[]",
+        "label": "تصویر ورودی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "عکس ورودی",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6aa0fcc1040270001f011ef6",
+        "fieldName": "quality",
+        "label": "کیفیت خروجی",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": "کیفیت خروجی",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6aa0fcc1040270001f011ef3",
+            "label": "کیفیت پایین",
+            "value": "low",
+            "credit": 1
+          },
+          {
+            "id": "6aa0fcc1040270001f011ef4",
+            "label": "کیفیت متوسط",
+            "value": "medium",
+            "credit": 4
+          },
+          {
+            "id": "6aa0fcc1040270001f011ef5",
+            "label": "کیفیت بالا",
+            "value": "high",
+            "credit": 10
+          },
+          {
+            "id": "6aa0fd0e165d0708d7796a64",
+            "label": "کیفیت خیلی بالا",
+            "value": "xhigh",
+            "credit": 20
+          },
+          {
+            "id": "6aa0fd2e165d0708d7796a66",
+            "label": "کیفیت اعلا (ماکس)",
+            "value": "max",
+            "credit": 40
+          }
+        ]
+      }
+    ],
+    "credit": 12,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "premium",
+      "speed": "balanced",
+      "promptAdherence": "good",
+      "image": {
+        "persianText": true,
+        "accurateText": true,
+        "transparentBackground": true,
+        "imageEditing": true,
+        "characterConsistency": true,
+        "photorealistic": true,
+        "illustration": true,
+        "logoDesign": true,
+        "productPhotography": true
+      },
+      "notes": "به صرفه و دقیق، تقریبا مناسب همه کاربردها"
+    },
+    "index": 0,
+    "status": "published",
+    "updatedAt": "2026-09-09T06:31:31.505Z",
+    "createdAt": "2026-09-09T06:29:21.291Z",
+    "startingCredit": 12,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_153",
+      "creditCost": 12,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 168,
+    "title": "Seedream 5 Flash",
+    "name": "5-flash",
+    "description": "تصویرسازی سریع ۱K تا ۲K از متن یا تا ۱۰ تصویر مرجع.",
+    "icon": null,
+    "imagePreview": null,
+    "provider": "seedream",
+    "type": "image",
+    "inputs": [
+      {
+        "id": "6ad6175b4cb8ed1623c08dba",
+        "fieldName": "image_urls[]",
+        "label": "تصاویر مرجع",
+        "type": "image",
+        "maxFiles": 10,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6175b4cb8ed1623c08dc3",
+        "fieldName": "aspect_ratio",
+        "label": "نسبت ابعاد",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6175b4cb8ed1623c08dbb",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "6ad6175b4cb8ed1623c08dbc",
+            "label": "4:3",
+            "value": "4:3",
+            "credit": null
+          },
+          {
+            "id": "6ad6175b4cb8ed1623c08dbd",
+            "label": "3:4",
+            "value": "3:4",
+            "credit": null
+          },
+          {
+            "id": "6ad6175b4cb8ed1623c08dbe",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6ad6175b4cb8ed1623c08dbf",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6ad6175b4cb8ed1623c08dc7",
+        "fieldName": "size",
+        "label": "رزولوشن",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6175b4cb8ed1623c08dc4",
+            "label": "1K",
+            "value": "1K",
+            "credit": null
+          },
+          {
+            "id": "6ad6175b4cb8ed1623c08dc5",
+            "label": "1.5K",
+            "value": "1.5K",
+            "credit": null
+          },
+          {
+            "id": "6ad6175b4cb8ed1623c08dc6",
+            "label": "2K",
+            "value": "2K",
+            "credit": null
+          }
+        ]
+      }
+    ],
+    "credit": 20,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "high",
+      "speed": "fast",
+      "promptAdherence": "good",
+      "image": {
+        "persianText": false,
+        "accurateText": false,
+        "transparentBackground": false,
+        "imageEditing": false,
+        "characterConsistency": false,
+        "photorealistic": false,
+        "illustration": false,
+        "logoDesign": false,
+        "productPhotography": false
+      }
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-10-19T19:10:06.328Z",
+    "createdAt": "2026-10-19T13:12:59.879Z",
+    "startingCredit": 20,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_168",
+      "creditCost": 20,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 44,
+    "title": "گراک ۱",
+    "name": "grok-imagine-image",
+    "description": "مناسب تصاویر واقع‌گرایانه، پرتره و ایده‌های خلاقانه با جزئیات بالا",
+    "icon": {
+      "id": 892,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-19T09:23:18.033Z",
+      "createdAt": "2026-08-19T09:23:18.033Z",
+      "url": "https://blog.hooshang.ai/api/media/file/Grok%20Imagine%20Video%201.5.png",
+      "thumbnailURL": null,
+      "filename": "Grok Imagine Video 1.5.png",
+      "mimeType": "image/png",
+      "filesize": 5378,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "xai",
+    "type": "image",
+    "inputs": [
+      {
+        "id": "6a2958cc289baa1897031f05",
+        "fieldName": "image",
+        "label": "عکس ورودی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      }
+    ],
+    "credit": 20,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "standard",
+      "speed": "fast",
+      "promptAdherence": "basic",
+      "image": {
+        "persianText": false,
+        "accurateText": false,
+        "transparentBackground": false,
+        "imageEditing": true,
+        "characterConsistency": true,
+        "photorealistic": false,
+        "illustration": true,
+        "logoDesign": false,
+        "productPhotography": false
+      }
+    },
+    "index": 6,
+    "status": "published",
+    "updatedAt": "2026-08-19T09:23:21.721Z",
+    "createdAt": "2026-06-10T12:30:36.156Z",
+    "startingCredit": 20,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_44",
+      "creditCost": 20,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 151,
+    "title": "نانو موز ۲ لایت",
+    "name": "nano-banana-2-lite",
+    "description": "سریع‌تین مدل گوگل برای ساخت و ویرایش عکس",
+    "icon": {
+      "id": 891,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-19T09:22:37.779Z",
+      "createdAt": "2026-08-19T09:22:37.779Z",
+      "url": "https://blog.hooshang.ai/api/media/file/Nano%20banana%202%20Lite.png",
+      "thumbnailURL": null,
+      "filename": "Nano banana 2 Lite.png",
+      "mimeType": "image/png",
+      "filesize": 29981,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "google",
+    "type": "image",
+    "inputs": [
+      {
+        "id": "6a85559f4e74cc001e274780",
+        "fieldName": "image_input[]",
+        "label": "تصویر ورودی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "reference_image"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a85559f4e74cc001e274786",
+        "fieldName": "aspect_ratio",
+        "label": "ابعاد خروجی",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "ابعاد",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a85559f4e74cc001e274781",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "6a85559f4e74cc001e274782",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6a85559f4e74cc001e274783",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          },
+          {
+            "id": "6a85559f4e74cc001e274784",
+            "label": "3:4",
+            "value": "3:4",
+            "credit": null
+          },
+          {
+            "id": "6a85559f4e74cc001e274785",
+            "label": "4:3",
+            "value": "4:3",
+            "credit": null
+          }
+        ]
+      }
+    ],
+    "credit": 35,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "standard",
+      "speed": "fast",
+      "promptAdherence": "good",
+      "image": {
+        "persianText": true,
+        "accurateText": true,
+        "transparentBackground": false,
+        "imageEditing": true,
+        "characterConsistency": true,
+        "photorealistic": true,
+        "illustration": true,
+        "logoDesign": true,
+        "productPhotography": true
+      }
+    },
+    "index": 2,
+    "status": "published",
+    "updatedAt": "2026-08-19T09:22:50.642Z",
+    "createdAt": "2026-08-19T07:05:03.291Z",
+    "startingCredit": 35,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_151",
+      "creditCost": 35,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 45,
+    "title": "گراک ۲",
+    "name": "grok-imagine-image-2",
+    "description": "نسخه باکیفیت‌تر Grok برای واقع‌گرایی بیشتر، جزئیات دقیق‌تر و متن خواناتر",
+    "icon": {
+      "id": 716,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-11T13:33:35.008Z",
+      "createdAt": "2026-08-11T13:33:35.007Z",
+      "url": "https://blog.hooshang.ai/api/media/file/grok-imagine-q-icon.png",
+      "thumbnailURL": null,
+      "filename": "grok-imagine-q-icon.png",
+      "mimeType": "image/png",
+      "filesize": 13146,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "xai",
+    "type": "image",
+    "inputs": [
+      {
+        "id": "6a295930289baa1897031f06",
+        "fieldName": "image",
+        "label": "عکس ورودی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a9845851676cb04c68972f8",
+        "fieldName": "aspect_ratio",
+        "label": "ابعاد خروجی",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a9845ac1676cb04c68972f9",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "6a9845b51676cb04c68972fa",
+            "label": "3:4",
+            "value": "3:4",
+            "credit": null
+          },
+          {
+            "id": "6a9845c01676cb04c68972fb",
+            "label": "4:3",
+            "value": "4:3",
+            "credit": null
+          },
+          {
+            "id": "6a9845c41676cb04c68972fc",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6a9845ca1676cb04c68972fd",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          }
+        ]
+      }
+    ],
+    "credit": 40,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "high",
+      "speed": "fast",
+      "promptAdherence": "good",
+      "image": {
+        "persianText": true,
+        "accurateText": true,
+        "transparentBackground": true,
+        "imageEditing": true,
+        "characterConsistency": true,
+        "photorealistic": true,
+        "illustration": true,
+        "logoDesign": true,
+        "productPhotography": true
+      },
+      "notes": "نسخه باکیفیت‌تر Grok برای واقع‌گرایی بیشتر، جزئیات دقیق‌تر و متن خواناتر"
+    },
+    "index": 5,
+    "status": "published",
+    "updatedAt": "2026-09-02T15:50:39.949Z",
+    "createdAt": "2026-06-10T12:33:07.839Z",
+    "startingCredit": 40,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_45",
+      "creditCost": 40,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 10,
+    "title": "نانو موز ۲",
+    "name": "nano-banana-2",
+    "description": "سریع و دقیق برای ساخت و ویرایش عکس، با قابلیت نوشتن متن فارسی و ثبات کاراکتر",
+    "icon": {
+      "id": 717,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-11T13:35:42.124Z",
+      "createdAt": "2026-08-11T13:35:42.124Z",
+      "url": "https://blog.hooshang.ai/api/media/file/nano-banana-2-icon.png",
+      "thumbnailURL": null,
+      "filename": "nano-banana-2-icon.png",
+      "mimeType": "image/png",
+      "filesize": 25996,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "google",
+    "type": "image",
+    "inputs": [
+      {
+        "id": "69f0be73066d3d0029bcd5a0",
+        "fieldName": "image_input[]",
+        "label": "تصویر ورودی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "reference_image"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "69f0d331fbb7500f068660f9",
+        "fieldName": "aspect_ratio",
+        "label": "ابعاد خروجی",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "ابعاد",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "69f0d33bfbb7500f068660fa",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "69f0d35bfbb7500f068660fb",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "69f0d362fbb7500f068660fc",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          },
+          {
+            "id": "69f0d368fbb7500f068660fd",
+            "label": "3:4",
+            "value": "3:4",
+            "credit": null
+          },
+          {
+            "id": "69f0d36dfbb7500f068660fe",
+            "label": "4:3",
+            "value": "4:3",
+            "credit": null
+          }
+        ]
+      }
+    ],
+    "credit": 70,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "high",
+      "speed": "balanced",
+      "promptAdherence": "good",
+      "image": {
+        "persianText": true,
+        "accurateText": true,
+        "transparentBackground": false,
+        "imageEditing": true,
+        "characterConsistency": true,
+        "photorealistic": true,
+        "illustration": true,
+        "logoDesign": true,
+        "productPhotography": true
+      }
+    },
+    "index": 2,
+    "status": "published",
+    "updatedAt": "2026-08-19T07:06:50.003Z",
+    "createdAt": "2026-04-28T14:04:35.636Z",
+    "startingCredit": 70,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_10",
+      "creditCost": 70,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 169,
+    "title": "Seedream 5 Pro",
+    "name": "5-pro",
+    "description": "تصویرسازی حرفه‌ای ۱K/۲K با جزئیات بیشتر، از متن یا تا ۱۰ تصویر مرجع.",
+    "icon": null,
+    "imagePreview": null,
+    "provider": "seedream",
+    "type": "image",
+    "inputs": [
+      {
+        "id": "6ad6175e4cb8ed1623c08dcb",
+        "fieldName": "image_urls[]",
+        "label": "تصاویر مرجع",
+        "type": "image",
+        "maxFiles": 10,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6175e4cb8ed1623c08dd4",
+        "fieldName": "aspect_ratio",
+        "label": "نسبت ابعاد",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6175e4cb8ed1623c08dcc",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "6ad6175e4cb8ed1623c08dcd",
+            "label": "4:3",
+            "value": "4:3",
+            "credit": null
+          },
+          {
+            "id": "6ad6175e4cb8ed1623c08dce",
+            "label": "3:4",
+            "value": "3:4",
+            "credit": null
+          },
+          {
+            "id": "6ad6175e4cb8ed1623c08dcf",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6ad6175e4cb8ed1623c08dd0",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6ad6175e4cb8ed1623c08dd7",
+        "fieldName": "quality",
+        "label": "کیفیت",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6175e4cb8ed1623c08dd5",
+            "label": "پایه (۱K)",
+            "value": "basic",
+            "credit": 1
+          },
+          {
+            "id": "6ad6175e4cb8ed1623c08dd6",
+            "label": "بالا (۲K)",
+            "value": "high",
+            "credit": 2
+          }
+        ]
+      }
+    ],
+    "credit": 75,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "high",
+      "speed": "balanced",
+      "promptAdherence": "good",
+      "image": {
+        "persianText": false,
+        "accurateText": false,
+        "transparentBackground": false,
+        "imageEditing": false,
+        "characterConsistency": false,
+        "photorealistic": false,
+        "illustration": false,
+        "logoDesign": false,
+        "productPhotography": false
+      }
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-10-19T19:09:22.406Z",
+    "createdAt": "2026-10-19T13:13:02.743Z",
+    "startingCredit": 75,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_169",
+      "creditCost": 75,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 9,
+    "title": "نانو موز پرو",
+    "name": "nano-banana-pro",
+    "description": "عالی برای ساخت تصاویر دقیق، ادیت حرفه‌ای و نوشتن متن فارسی",
+    "icon": {
+      "id": 718,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-11T13:38:36.571Z",
+      "createdAt": "2026-08-11T13:38:36.571Z",
+      "url": "https://blog.hooshang.ai/api/media/file/nano-banana-pro-icon.png",
+      "thumbnailURL": null,
+      "filename": "nano-banana-pro-icon.png",
+      "mimeType": "image/png",
+      "filesize": 28367,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "google",
+    "type": "image",
+    "inputs": [
+      {
+        "id": "69f0bbdc0433cd034e920e7b",
+        "fieldName": "image_input[]",
+        "label": "عکس ورودی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "عکس ورودی",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "69f0d2cefbb7500f068660f3",
+        "fieldName": "aspect_ratio",
+        "label": "ابعاد خروجی",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "ابعاد",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "69f0d2ddfbb7500f068660f4",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "69f0d2ee0d53bd0029da52c5",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "69f0d2eafbb7500f068660f6",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          },
+          {
+            "id": "69f0d2fafbb7500f068660f7",
+            "label": "3:4",
+            "value": "3:4",
+            "credit": null
+          },
+          {
+            "id": "69f0d307fbb7500f068660f8",
+            "label": "4:3",
+            "value": "4:3",
+            "credit": null
+          }
+        ]
+      }
+    ],
+    "credit": 150,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "premium",
+      "speed": "slow",
+      "promptAdherence": "excellent",
+      "image": {
+        "persianText": true,
+        "accurateText": true,
+        "transparentBackground": false,
+        "imageEditing": true,
+        "characterConsistency": true,
+        "photorealistic": true,
+        "illustration": true,
+        "logoDesign": true,
+        "productPhotography": true
+      }
+    },
+    "index": 3,
+    "status": "published",
+    "updatedAt": "2026-08-13T06:28:22.581Z",
+    "createdAt": "2026-04-28T13:54:17.486Z",
+    "startingCredit": 150,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_9",
+      "creditCost": 150,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  }
+]

@@ -1,0 +1,3577 @@
+[
+  {
+    "id": 164,
+    "title": "PixVerse V6",
+    "name": "v6",
+    "description": "ویدیوی ۱ تا ۱۵ ثانیه از متن، تصویر، فریم اول/آخر یا چند تصویر مرجع؛ با گزینه صدای همزمان.",
+    "icon": null,
+    "imagePreview": null,
+    "provider": "pixverse",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "6ad617514cb8ed1623c08d7c",
+        "fieldName": "image_urls[]",
+        "label": "تصاویر ورودی",
+        "type": "image",
+        "maxFiles": 2,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "start_frame"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad617514cb8ed1623c08d7f",
+        "fieldName": "image_references[]",
+        "label": "تصاویر مرجع",
+        "type": "image",
+        "maxFiles": 7,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad617514cb8ed1623c08d88",
+        "fieldName": "aspect_ratio",
+        "label": "نسبت ابعاد",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad617514cb8ed1623c08d80",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d81",
+            "label": "4:3",
+            "value": "4:3",
+            "credit": null
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d82",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d83",
+            "label": "3:4",
+            "value": "3:4",
+            "credit": null
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d84",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d85",
+            "label": "2:3",
+            "value": "2:3",
+            "credit": null
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d86",
+            "label": "3:2",
+            "value": "3:2",
+            "credit": null
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d87",
+            "label": "21:9",
+            "value": "21:9",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6ad617514cb8ed1623c08d8d",
+        "fieldName": "quality",
+        "label": "کیفیت",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad617514cb8ed1623c08d89",
+            "label": "360p",
+            "value": "360p",
+            "credit": 1
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d8a",
+            "label": "540p",
+            "value": "540p",
+            "credit": 1.5
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d8b",
+            "label": "720p",
+            "value": "720p",
+            "credit": 2
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d8c",
+            "label": "1080p",
+            "value": "1080p",
+            "credit": 3
+          }
+        ]
+      },
+      {
+        "id": "6ad617514cb8ed1623c08d91",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad617514cb8ed1623c08d8e",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": null
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d8f",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d90",
+            "label": "۱۵ ثانیه",
+            "value": "15",
+            "credit": 3
+          }
+        ]
+      },
+      {
+        "id": "6ad617514cb8ed1623c08d94",
+        "fieldName": "generate_audio_switch",
+        "label": "صدای همزمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad617514cb8ed1623c08d92",
+            "label": "بدون صدا",
+            "value": "false",
+            "credit": null
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d93",
+            "label": "با صدا",
+            "value": "true",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6ad617514cb8ed1623c08d97",
+        "fieldName": "generate_multi_clip_switch",
+        "label": "چند کلیپ",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad617514cb8ed1623c08d95",
+            "label": "تک کلیپ",
+            "value": "false",
+            "credit": null
+          },
+          {
+            "id": "6ad617514cb8ed1623c08d96",
+            "label": "چند کلیپ",
+            "value": "true",
+            "credit": null
+          }
+        ]
+      }
+    ],
+    "credit": 140,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "high",
+      "speed": "fast",
+      "promptAdherence": "good",
+      "video": {
+        "generatesAudio": true,
+        "generatesSpeech": true,
+        "persianSpeech": true,
+        "lipSync": true,
+        "characterConsistency": true,
+        "cinematicMotion": false,
+        "realisticMotion": false,
+        "animation": false
+      }
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-10-20T18:43:00.321Z",
+    "createdAt": "2026-10-19T13:12:49.394Z",
+    "startingCredit": 140,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_164",
+      "creditCost": 140,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 161,
+    "title": "Vidu Q4",
+    "name": "q4",
+    "description": "ویدیوی سینمایی با صدای همزمان، تا ۴K و ۱۶ ثانیه؛ از تصویر اول یا چند تصویر و صدای مرجع.",
+    "icon": null,
+    "imagePreview": null,
+    "provider": "vidu",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "6ad6174b4cb8ed1623c08d39",
+        "fieldName": "image_url",
+        "label": "تصویر ورودی",
+        "type": "image",
+        "maxFiles": 1,
+        "maxFileSizeMb": 10,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "start_frame"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "options": [],
+        "required": true
+      },
+      {
+        "id": "6ad6174b4cb8ed1623c08d3a",
+        "fieldName": "reference_image_urls[]",
+        "label": "تصاویر مرجع",
+        "type": "image",
+        "maxFiles": 15,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6174b4cb8ed1623c08d3b",
+        "fieldName": "reference_audio_urls[]",
+        "label": "صداهای مرجع",
+        "type": "audio",
+        "maxFiles": 3,
+        "maxFileSizeMb": 15,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "audio_track",
+          "speech_audio"
+        ],
+        "acceptedMimeTypes": [
+          "audio/mpeg",
+          "audio/wav",
+          "audio/x-wav"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6174b4cb8ed1623c08d3f",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6174b4cb8ed1623c08d3c",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": null
+          },
+          {
+            "id": "6ad6174b4cb8ed1623c08d3d",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          },
+          {
+            "id": "6ad6174b4cb8ed1623c08d3e",
+            "label": "۱۵ ثانیه",
+            "value": "15",
+            "credit": 3
+          }
+        ]
+      },
+      {
+        "id": "6ad6174b4cb8ed1623c08d45",
+        "fieldName": "resolution",
+        "label": "رزولوشن",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6174b4cb8ed1623c08d40",
+            "label": "540p",
+            "value": "540p",
+            "credit": 1
+          },
+          {
+            "id": "6ad6174b4cb8ed1623c08d41",
+            "label": "720p",
+            "value": "720p",
+            "credit": 2
+          },
+          {
+            "id": "6ad6174b4cb8ed1623c08d42",
+            "label": "1080p",
+            "value": "1080p",
+            "credit": 3
+          },
+          {
+            "id": "6ad6174b4cb8ed1623c08d43",
+            "label": "2K",
+            "value": "2k",
+            "credit": 5
+          },
+          {
+            "id": "6ad6174b4cb8ed1623c08d44",
+            "label": "4K",
+            "value": "4k",
+            "credit": 10
+          }
+        ]
+      },
+      {
+        "id": "6ad6174b4cb8ed1623c08d4b",
+        "fieldName": "aspect_ratio",
+        "label": "نسبت ابعاد",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6174b4cb8ed1623c08d46",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6ad6174b4cb8ed1623c08d47",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          },
+          {
+            "id": "6ad6174b4cb8ed1623c08d48",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "6ad6174b4cb8ed1623c08d49",
+            "label": "4:3",
+            "value": "4:3",
+            "credit": null
+          },
+          {
+            "id": "6ad6174b4cb8ed1623c08d4a",
+            "label": "3:4",
+            "value": "3:4",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6ad6174b4cb8ed1623c08d4e",
+        "fieldName": "audio",
+        "label": "صدا",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6174b4cb8ed1623c08d4c",
+            "label": "بدون صدا",
+            "value": "false",
+            "credit": null
+          },
+          {
+            "id": "6ad6174b4cb8ed1623c08d4d",
+            "label": "با صدا",
+            "value": "true",
+            "credit": null
+          }
+        ]
+      }
+    ],
+    "credit": 200,
+    "advisorProfile": {
+      "enabled": false,
+      "notes": "Needs input images. Wether it's input image or reference image, it needs at least one to work"
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-10-20T04:51:58.086Z",
+    "createdAt": "2026-10-19T13:12:43.655Z",
+    "startingCredit": 200,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_161",
+      "creditCost": 200,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 163,
+    "title": "Wan 3.0",
+    "name": "3-0-video",
+    "description": "ویدیوی تا ۳۰ ثانیه از متن، فریم اول/آخر یا رفرنس‌های تصویر، ویدیو و صدا؛ با صدای همزمان.",
+    "icon": null,
+    "imagePreview": null,
+    "provider": "wan",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "6ad6174f4cb8ed1623c08d62",
+        "fieldName": "first_frame_url",
+        "label": "فریم اول",
+        "type": "image",
+        "maxFiles": 1,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "start_frame",
+          "source_image"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6174f4cb8ed1623c08d63",
+        "fieldName": "last_frame_url",
+        "label": "فریم آخر",
+        "type": "image",
+        "maxFiles": 1,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "end_frame"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6174f4cb8ed1623c08d64",
+        "fieldName": "reference_image_urls[]",
+        "label": "تصاویر مرجع",
+        "type": "image",
+        "maxFiles": 10,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6174f4cb8ed1623c08d65",
+        "fieldName": "reference_video_urls[]",
+        "label": "ویدیوهای مرجع",
+        "type": "video",
+        "maxFiles": 5,
+        "maxFileSizeMb": 50,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_video",
+          "source_video"
+        ],
+        "acceptedMimeTypes": [
+          "video/mp4",
+          "video/quicktime"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6174f4cb8ed1623c08d66",
+        "fieldName": "reference_audio_urls[]",
+        "label": "صداهای مرجع",
+        "type": "audio",
+        "maxFiles": 5,
+        "maxFileSizeMb": 15,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "audio_track",
+          "speech_audio"
+        ],
+        "acceptedMimeTypes": [
+          "audio/mpeg",
+          "audio/wav",
+          "audio/x-wav"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6174f4cb8ed1623c08d6a",
+        "fieldName": "resolution",
+        "label": "رزولوشن",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6174f4cb8ed1623c08d67",
+            "label": "480P",
+            "value": "480P",
+            "credit": 1
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d68",
+            "label": "720P",
+            "value": "720P",
+            "credit": 2
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d69",
+            "label": "1080P",
+            "value": "1080P",
+            "credit": 4
+          }
+        ]
+      },
+      {
+        "id": "6ad6174f4cb8ed1623c08d71",
+        "fieldName": "aspect_ratio",
+        "label": "نسبت ابعاد",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6174f4cb8ed1623c08d6b",
+            "label": "adaptive",
+            "value": "adaptive",
+            "credit": null
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d6c",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d6d",
+            "label": "4:3",
+            "value": "4:3",
+            "credit": null
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d6e",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d6f",
+            "label": "3:4",
+            "value": "3:4",
+            "credit": null
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d70",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6ad6174f4cb8ed1623c08d78",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6174f4cb8ed1623c08d72",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": 1
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d73",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d74",
+            "label": "۱۵ ثانیه",
+            "value": "15",
+            "credit": 3
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d75",
+            "label": "۲۰ ثانیه",
+            "value": "20",
+            "credit": 4
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d76",
+            "label": "۲۵ ثانیه",
+            "value": "25",
+            "credit": 5
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d77",
+            "label": "۳۰ ثانیه",
+            "value": "30",
+            "credit": 6
+          }
+        ]
+      },
+      {
+        "id": "6ad6174f4cb8ed1623c08d7b",
+        "fieldName": "audio",
+        "label": "صدا",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6174f4cb8ed1623c08d79",
+            "label": "بدون صدا",
+            "value": "false",
+            "credit": null
+          },
+          {
+            "id": "6ad6174f4cb8ed1623c08d7a",
+            "label": "با صدا",
+            "value": "true",
+            "credit": null
+          }
+        ]
+      }
+    ],
+    "credit": 250,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "standard",
+      "speed": "balanced",
+      "promptAdherence": "good",
+      "video": {
+        "generatesAudio": true,
+        "generatesSpeech": true,
+        "persianSpeech": false,
+        "lipSync": true,
+        "characterConsistency": true,
+        "cinematicMotion": true,
+        "realisticMotion": true,
+        "animation": true
+      },
+      "notes": "Good for character replacement and motion copy, works goo with video references and image references"
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-10-24T10:50:57.333Z",
+    "createdAt": "2026-10-19T13:12:47.405Z",
+    "startingCredit": 250,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_163",
+      "creditCost": 250,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 116,
+    "title": "Seedance 2 Mini",
+    "name": "seedance-2.0-mini",
+    "description": "تولید سریع و اقتصادی · ۴ تا ۱۵ ثانیه · 480p/720p · صدای همزمان · image-to-Video · رفرنس چندرسانه‌ای · مناسب تست ایده و محتوای حجمی · بدون صدای فارسی",
+    "icon": {
+      "id": 889,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-19T09:17:26.699Z",
+      "createdAt": "2026-08-19T09:17:26.699Z",
+      "url": "https://blog.hooshang.ai/api/media/file/Seedance%202%20Mini.png",
+      "thumbnailURL": null,
+      "filename": "Seedance 2 Mini.png",
+      "mimeType": "image/png",
+      "filesize": 12918,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "bytedance",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "6a83417b5b72eb001ed1bdb9",
+        "fieldName": "reference_images[]",
+        "label": "تصاویر مرجع (برای استفاده به عنوان اجزا، استایل‌ها و یا سکانس‌های مورد استفاده)",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "آپلود",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "reference_image"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a83417b5b72eb001ed1bdba",
+        "fieldName": "reference_videos[]",
+        "label": "ویدئوهای مرجع (برای ایده گرفتن یا اعمال تغییرات)",
+        "type": "video",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "آپلود",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_video"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a83417b5b72eb001ed1bdbd",
+        "fieldName": "generate_audio",
+        "label": "ساخت صدا",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a83417b5b72eb001ed1bdbb",
+            "label": "دارد",
+            "value": "true",
+            "credit": null
+          },
+          {
+            "id": "6a83417b5b72eb001ed1bdbc",
+            "label": "ندارد",
+            "value": "false",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6a83417b5b72eb001ed1bdc2",
+        "fieldName": "resolution",
+        "label": "کیفیت",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a83417b5b72eb001ed1bdbe",
+            "label": "480p",
+            "value": "480p",
+            "credit": null
+          },
+          {
+            "id": "6a83417b5b72eb001ed1bdbf",
+            "label": "720p",
+            "value": "720p",
+            "credit": 2
+          }
+        ]
+      },
+      {
+        "id": "6a83417b5b72eb001ed1bdc5",
+        "fieldName": "aspect_ratio",
+        "label": "ابعاد خروجی",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a83417b5b72eb001ed1bdc3",
+            "label": "افقی",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6a83417b5b72eb001ed1bdc4",
+            "label": "عمودی",
+            "value": "9:16",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6a83417b5b72eb001ed1bdc9",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a83417b5b72eb001ed1bdc6",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": null
+          },
+          {
+            "id": "6a83417b5b72eb001ed1bdc7",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          },
+          {
+            "id": "6a83417b5b72eb001ed1bdc8",
+            "label": "۱۵ ثانیه",
+            "value": "15",
+            "credit": 3
+          }
+        ]
+      }
+    ],
+    "credit": 250,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "standard",
+      "speed": "fast",
+      "promptAdherence": "good",
+      "video": {
+        "generatesAudio": true,
+        "generatesSpeech": true,
+        "persianSpeech": false,
+        "lipSync": true,
+        "characterConsistency": true,
+        "cinematicMotion": true,
+        "realisticMotion": true,
+        "animation": true
+      },
+      "notes": "- Does not accept real people faces as input images"
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-10-18T05:46:51.647Z",
+    "createdAt": "2026-08-17T17:14:35.386Z",
+    "startingCredit": 250,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_116",
+      "creditCost": 250,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 162,
+    "title": "MiniMax H3",
+    "name": "h3",
+    "description": "ویدیوی تا ۲K با صدای استریو؛ از متن، فریم اول/آخر یا چند تصویر، ویدیو و صدای مرجع.",
+    "icon": null,
+    "imagePreview": null,
+    "provider": "minimax",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "6ad6174d4cb8ed1623c08d4f",
+        "fieldName": "first_frame_url",
+        "label": "فریم اول",
+        "type": "image",
+        "maxFiles": 1,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "start_frame",
+          "source_image"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp",
+          "image/heic"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6174d4cb8ed1623c08d50",
+        "fieldName": "last_frame_url",
+        "label": "فریم آخر",
+        "type": "image",
+        "maxFiles": 1,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "end_frame"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp",
+          "image/heic"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6174d4cb8ed1623c08d51",
+        "fieldName": "reference_image_urls[]",
+        "label": "تصاویر مرجع",
+        "type": "image",
+        "maxFiles": 9,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp",
+          "image/heic"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6174d4cb8ed1623c08d52",
+        "fieldName": "reference_video_urls[]",
+        "label": "ویدیوهای مرجع",
+        "type": "video",
+        "maxFiles": 3,
+        "maxFileSizeMb": 50,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_video",
+          "source_video"
+        ],
+        "acceptedMimeTypes": [
+          "video/mp4",
+          "video/quicktime"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6174d4cb8ed1623c08d53",
+        "fieldName": "reference_audio_urls[]",
+        "label": "صداهای مرجع",
+        "type": "audio",
+        "maxFiles": 3,
+        "maxFileSizeMb": 15,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "audio_track",
+          "speech_audio"
+        ],
+        "acceptedMimeTypes": [
+          "audio/mpeg",
+          "audio/wav",
+          "audio/x-wav"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad6174d4cb8ed1623c08d5a",
+        "fieldName": "aspect_ratio",
+        "label": "نسبت ابعاد",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6174d4cb8ed1623c08d54",
+            "label": "21:9",
+            "value": "21:9",
+            "credit": null
+          },
+          {
+            "id": "6ad6174d4cb8ed1623c08d55",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6ad6174d4cb8ed1623c08d56",
+            "label": "4:3",
+            "value": "4:3",
+            "credit": null
+          },
+          {
+            "id": "6ad6174d4cb8ed1623c08d57",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "6ad6174d4cb8ed1623c08d58",
+            "label": "3:4",
+            "value": "3:4",
+            "credit": null
+          },
+          {
+            "id": "6ad6174d4cb8ed1623c08d59",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6ad6174d4cb8ed1623c08d5e",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6174d4cb8ed1623c08d5b",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": 1
+          },
+          {
+            "id": "6ad6174d4cb8ed1623c08d5c",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          },
+          {
+            "id": "6ad6174d4cb8ed1623c08d5d",
+            "label": "۱۵ ثانیه",
+            "value": "15",
+            "credit": 3
+          }
+        ]
+      },
+      {
+        "id": "6ad6174d4cb8ed1623c08d61",
+        "fieldName": "resolution",
+        "label": "رزولوشن",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad6174d4cb8ed1623c08d5f",
+            "label": "768P",
+            "value": "768P",
+            "credit": 1
+          },
+          {
+            "id": "6ad6174d4cb8ed1623c08d60",
+            "label": "2K",
+            "value": "2K",
+            "credit": 2
+          }
+        ]
+      }
+    ],
+    "credit": 300,
+    "advisorProfile": {
+      "enabled": false
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-10-19T13:26:26.318Z",
+    "createdAt": "2026-10-19T13:12:45.746Z",
+    "startingCredit": 300,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_162",
+      "creditCost": 300,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 7,
+    "title": "Kling 2.5 Turbo Pro",
+    "name": "kling-v2.5-turbo-pro",
+    "description": "مناسب ویدیوهای سینمایی با حرکت طبیعی، دوربین پویا و جزئیات بالا",
+    "icon": {
+      "id": 720,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-11T13:43:07.772Z",
+      "createdAt": "2026-08-11T13:43:07.772Z",
+      "url": "https://blog.hooshang.ai/api/media/file/kling-2.5-turbo-pro-icon.png",
+      "thumbnailURL": null,
+      "filename": "kling-2.5-turbo-pro-icon.png",
+      "mimeType": "image/png",
+      "filesize": 19276,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "kwaivgi",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "69f0b9dc0433cd034e920e70",
+        "fieldName": "start_image",
+        "label": "فریم اولیه",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "فریم اولیه",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "start_frame"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a7d64d07d63f947a437a26d",
+        "fieldName": "end_frame",
+        "label": "فریم پایانی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "end_frame"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "69f0b9fb0433cd034e920e71",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": "مدت زمان",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "69f0ba0e0433cd034e920e72",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": null
+          },
+          {
+            "id": "69f0ba120433cd034e920e73",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          }
+        ]
+      }
+    ],
+    "credit": 360,
+    "advisorProfile": {
+      "enabled": false
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-08-13T06:32:44.255Z",
+    "createdAt": "2026-04-28T13:46:09.653Z",
+    "startingCredit": 360,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_7",
+      "creditCost": 360,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 43,
+    "title": "Grok Imagine video 1.5",
+    "name": "grok-imagine-video-1.5",
+    "description": "واقع‌گرایانه و سریع، با حرکت طبیعی‌تر، صدای همزمان و lip-sync بهتر فارسی",
+    "icon": {
+      "id": 712,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-11T13:22:14.809Z",
+      "createdAt": "2026-08-11T13:22:14.809Z",
+      "url": "https://blog.hooshang.ai/api/media/file/grok-video-icon.png",
+      "thumbnailURL": null,
+      "filename": "grok-video-icon.png",
+      "mimeType": "image/png",
+      "filesize": 5378,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "xai",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "6a295858289baa1897031f00",
+        "fieldName": "image",
+        "label": "عکس ورودی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "reference_image",
+          "start_frame"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a295874289baa1897031f01",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a295883289baa1897031f02",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": null
+          },
+          {
+            "id": "6a29588d289baa1897031f03",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          },
+          {
+            "id": "6a295894289baa1897031f04",
+            "label": "۱۵ ثانیه",
+            "value": "15",
+            "credit": 3
+          }
+        ]
+      }
+    ],
+    "credit": 400,
+    "advisorProfile": {
+      "enabled": false,
+      "video": {
+        "generatesAudio": true,
+        "generatesSpeech": true,
+        "persianSpeech": true,
+        "lipSync": false,
+        "characterConsistency": true,
+        "cinematicMotion": true,
+        "realisticMotion": true,
+        "animation": true
+      }
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-08-13T06:25:29.107Z",
+    "createdAt": "2026-06-10T12:29:32.024Z",
+    "startingCredit": 400,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_43",
+      "creditCost": 400,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 166,
+    "title": "Kling 3.0 Turbo",
+    "name": "3-0-turbo",
+    "description": "ویدیوی سریع ۷۲۰p/۱۰۸۰p از متن یا تصویر، با صدای همزمان.",
+    "icon": null,
+    "imagePreview": null,
+    "provider": "kling",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "6ad617574cb8ed1623c08da5",
+        "fieldName": "image_urls[]",
+        "label": "تصویر ورودی",
+        "type": "image",
+        "maxFiles": 1,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "start_frame"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "options": []
+      },
+      {
+        "id": "6ad617574cb8ed1623c08da9",
+        "fieldName": "aspect_ratio",
+        "label": "نسبت ابعاد",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad617574cb8ed1623c08da6",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "6ad617574cb8ed1623c08da7",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          },
+          {
+            "id": "6ad617574cb8ed1623c08da8",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6ad617574cb8ed1623c08dad",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad617574cb8ed1623c08daa",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": 1
+          },
+          {
+            "id": "6ad617574cb8ed1623c08dab",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          },
+          {
+            "id": "6ad617574cb8ed1623c08dac",
+            "label": "۱۵ ثانیه",
+            "value": "15",
+            "credit": 3
+          }
+        ]
+      },
+      {
+        "id": "6ad617574cb8ed1623c08db0",
+        "fieldName": "resolution",
+        "label": "رزولوشن",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ad617574cb8ed1623c08dae",
+            "label": "720p",
+            "value": "720p",
+            "credit": 1
+          },
+          {
+            "id": "6ad617574cb8ed1623c08daf",
+            "label": "1080p",
+            "value": "1080p",
+            "credit": 1.25
+          }
+        ]
+      }
+    ],
+    "credit": 450,
+    "advisorProfile": {
+      "enabled": false
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-10-19T13:29:43.026Z",
+    "createdAt": "2026-10-19T13:12:55.355Z",
+    "startingCredit": 450,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_166",
+      "creditCost": 450,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 152,
+    "title": "Gemini Omni Flash 1.1",
+    "name": "gemini-omni-1.1",
+    "description": "قوی‌ترین مدل گوگل با پشتیبانی خوب از زبان فارسی",
+    "icon": {
+      "id": 710,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-11T13:19:37.043Z",
+      "createdAt": "2026-08-11T13:19:37.042Z",
+      "url": "https://blog.hooshang.ai/api/media/file/gemini-omni-icon.png",
+      "thumbnailURL": null,
+      "filename": "gemini-omni-icon.png",
+      "mimeType": "image/png",
+      "filesize": 14525,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "google",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "6a93cf99e05a58001f337edf",
+        "fieldName": "image",
+        "label": "تصویر ورودی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a93d03b460200eabb54db88",
+        "fieldName": "last_frame",
+        "label": "فریم پایانی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "end_frame"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a93cf99e05a58001f337ee0",
+        "fieldName": "video",
+        "label": "ویدئوی ورودی برای ویرایش",
+        "type": "video",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_video",
+          "reference_video"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a93d018460200eabb54db87",
+        "fieldName": "reference_images[]",
+        "label": "تصاویر مرجع",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a93cf99e05a58001f337ee7",
+        "fieldName": "aspect_ratio",
+        "label": "ابعاد تصویر",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a93cf99e05a58001f337ee5",
+            "label": "افقی",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6a93cf99e05a58001f337ee6",
+            "label": "عمودی",
+            "value": "9:16",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6a93d07f460200eabb54db89",
+        "fieldName": "resolution",
+        "label": "کیفیت تصویر",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a93d091460200eabb54db8a",
+            "label": "360p",
+            "value": "360p",
+            "credit": null
+          },
+          {
+            "id": "6a93d0c8460200eabb54db8c",
+            "label": "720p",
+            "value": "720p",
+            "credit": 3
+          },
+          {
+            "id": "6a93d0f2460200eabb54db8e",
+            "label": "1080p",
+            "value": "1080p",
+            "credit": 5
+          },
+          {
+            "id": "6a93d0fc460200eabb54db8f",
+            "label": "4k",
+            "value": "4k",
+            "credit": 9
+          }
+        ]
+      }
+    ],
+    "credit": 500,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "premium",
+      "speed": "balanced",
+      "promptAdherence": "excellent",
+      "video": {
+        "generatesAudio": true,
+        "generatesSpeech": true,
+        "persianSpeech": true,
+        "lipSync": true,
+        "characterConsistency": true,
+        "cinematicMotion": true,
+        "realisticMotion": true,
+        "animation": true
+      }
+    },
+    "index": 0,
+    "status": "published",
+    "updatedAt": "2026-08-30T07:31:44.800Z",
+    "createdAt": "2026-08-30T06:37:13.533Z",
+    "startingCredit": 500,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_152",
+      "creditCost": 500,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 1,
+    "title": "Wan 2.6 Image to Video",
+    "name": "wan-2.6-i2v",
+    "description": "برای جان‌بخشیدن به عکس‌ها با حرکت طبیعی، حفظ سوژه و صحنه‌های واقع‌گرایانه",
+    "icon": {
+      "id": 722,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-11T13:47:58.515Z",
+      "createdAt": "2026-08-11T13:47:58.515Z",
+      "url": "https://blog.hooshang.ai/api/media/file/wan-2.6-i2v-icon.png",
+      "thumbnailURL": null,
+      "filename": "wan-2.6-i2v-icon.png",
+      "mimeType": "image/png",
+      "filesize": 8026,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "wan-video",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "69f0b53c64898bd3aecc7b3f",
+        "fieldName": "image",
+        "label": "تصویر",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "start_frame"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "69f0b55264898bd3aecc7b40",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "69f0b56f64898bd3aecc7b41",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": null
+          },
+          {
+            "id": "69f0b58464898bd3aecc7b42",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          },
+          {
+            "id": "69f0b59864898bd3aecc7b43",
+            "label": "۱۵ ثانیه",
+            "value": "15",
+            "credit": 3
+          }
+        ]
+      }
+    ],
+    "credit": 500,
+    "advisorProfile": {
+      "enabled": false,
+      "video": {
+        "generatesAudio": false,
+        "generatesSpeech": false,
+        "persianSpeech": false,
+        "lipSync": false,
+        "characterConsistency": true,
+        "cinematicMotion": true,
+        "realisticMotion": true,
+        "animation": false
+      }
+    },
+    "index": 2,
+    "status": "published",
+    "updatedAt": "2026-08-13T06:33:43.253Z",
+    "createdAt": "2026-04-28T13:26:57.181Z",
+    "startingCredit": 500,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_1",
+      "creditCost": 500,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 117,
+    "title": "Seedance 2.5",
+    "name": "seedance-2.5",
+    "description": "ویدیو سینمایی · تا ۳۰ ثانیه · 4K · صدای همزمان · دیالوگ چندزبانه · چند شات · حفظ کاراکتر · تا ۵۰ رفرنس · مناسب تبلیغات و ویدیوهای حرفه‌ای · بدون صدای فارسی",
+    "icon": {
+      "id": 888,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-19T09:16:21.938Z",
+      "createdAt": "2026-08-19T09:16:21.938Z",
+      "url": "https://blog.hooshang.ai/api/media/file/Seedance%202.5-1.png",
+      "thumbnailURL": null,
+      "filename": "Seedance 2.5-1.png",
+      "mimeType": "image/png",
+      "filesize": 15091,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "bytedance",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "6a83427c5b72eb001ed1bdca",
+        "fieldName": "image",
+        "label": "فریم اولیه",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "start_frame"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a83427c5b72eb001ed1bdcb",
+        "fieldName": "last_frame_image",
+        "label": "فریم پایانی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "تصویر پایانی",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "end_frame"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a83427c5b72eb001ed1bdcc",
+        "fieldName": "reference_images[]",
+        "label": "تصاویر مرجع (برای استفاده به عنوان اجزا، استایل‌ها و یا سکانس‌های مورد استفاده)",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "آپلود",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_image",
+          "reference_image"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a83427c5b72eb001ed1bdcd",
+        "fieldName": "reference_videos[]",
+        "label": "ویدئوهای مرجع (برای ایده گرفتن یا اعمال تغییرات)",
+        "type": "video",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "آپلود",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_video"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a83427c5b72eb001ed1bdd0",
+        "fieldName": "generate_audio",
+        "label": "ساخت صدا",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a83427c5b72eb001ed1bdce",
+            "label": "دارد",
+            "value": "true",
+            "credit": null
+          },
+          {
+            "id": "6a83427c5b72eb001ed1bdcf",
+            "label": "ندارد",
+            "value": "false",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6a83427c5b72eb001ed1bdd5",
+        "fieldName": "resolution",
+        "label": "کیفیت",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a83427c5b72eb001ed1bdd1",
+            "label": "480p",
+            "value": "480p",
+            "credit": null
+          },
+          {
+            "id": "6a83427c5b72eb001ed1bdd2",
+            "label": "720p",
+            "value": "720p",
+            "credit": 2
+          },
+          {
+            "id": "6a83427c5b72eb001ed1bdd3",
+            "label": "1080p",
+            "value": "1080p",
+            "credit": 5
+          },
+          {
+            "id": "6a83427c5b72eb001ed1bdd4",
+            "label": "4k",
+            "value": "4k",
+            "credit": 10
+          }
+        ]
+      },
+      {
+        "id": "6a83427c5b72eb001ed1bdd8",
+        "fieldName": "aspect_ratio",
+        "label": "ابعاد خروجی",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a83427c5b72eb001ed1bdd6",
+            "label": "افقی",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6a83427c5b72eb001ed1bdd7",
+            "label": "عمودی",
+            "value": "9:16",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6a83427c5b72eb001ed1bddc",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a83427c5b72eb001ed1bdd9",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": null
+          },
+          {
+            "id": "6a83427c5b72eb001ed1bdda",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          },
+          {
+            "id": "6a83427c5b72eb001ed1bddb",
+            "label": "۱۵ ثانیه",
+            "value": "15",
+            "credit": 3
+          },
+          {
+            "id": "6a8342ad9863e419fb4b4bd5",
+            "label": "۲۰ ثانیه",
+            "value": "20",
+            "credit": 4
+          },
+          {
+            "id": "6a8342b29863e419fb4b4bd6",
+            "label": "۲۵ ثانیه",
+            "value": "25",
+            "credit": 5
+          },
+          {
+            "id": "6a8342b69863e419fb4b4bd7",
+            "label": "۳۰ ثانیه",
+            "value": "30",
+            "credit": 6
+          }
+        ]
+      }
+    ],
+    "credit": 550,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "premium",
+      "speed": "slow",
+      "promptAdherence": "excellent",
+      "video": {
+        "generatesAudio": true,
+        "generatesSpeech": true,
+        "persianSpeech": false,
+        "lipSync": true,
+        "characterConsistency": true,
+        "cinematicMotion": true,
+        "realisticMotion": true,
+        "animation": true
+      },
+      "notes": "- Works good for cinematic videos, pro camera movements, frozen-time videos, time-travels, emotion control.\n- Does not accept real people faces as input images"
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-08-19T09:21:09.292Z",
+    "createdAt": "2026-08-17T17:18:52.984Z",
+    "startingCredit": 550,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_117",
+      "creditCost": 550,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 159,
+    "title": "Wan 3 Prime",
+    "name": "3-0-video-prime",
+    "description": "مناسب تغییر کاراتر‌های داخل ویدئو، ساخت ویدئو با چند رفرنس مختلف، و کارهای ترندی مخصوص اینستاگرام و تیک‌تاک",
+    "icon": null,
+    "imagePreview": null,
+    "provider": "wan",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "6ac4d8b4851bb420b2252959",
+        "fieldName": "reference_image_urls[]",
+        "label": "عکس‌های ورودی مرجع",
+        "type": "image",
+        "maxFiles": 10,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6ac4d8ff851bb420b225295a",
+        "fieldName": "reference_video_urls[]",
+        "label": "ویدئو‌های ورودی مرجع",
+        "type": "video",
+        "maxFiles": 5,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "source_video",
+          "reference_video"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6ac4d979851bb420b225295b",
+        "fieldName": "reference_audio_urls[]",
+        "label": "صداهای ورودی مرجع",
+        "type": "audio",
+        "maxFiles": 5,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "audio_track",
+          "speech_audio",
+          "sound_effects"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6ac4d9d3851bb420b225295c",
+        "fieldName": "resolution",
+        "label": "رزولوشن",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ac4d9e8851bb420b225295d",
+            "label": "480P",
+            "value": "480P",
+            "credit": null
+          },
+          {
+            "id": "6ac4d9f4851bb420b225295e",
+            "label": "720P",
+            "value": "720P",
+            "credit": 2
+          },
+          {
+            "id": "6ac4d9fa851bb420b225295f",
+            "label": "1080P",
+            "value": "1080P",
+            "credit": 4
+          }
+        ]
+      },
+      {
+        "id": "6ac4da4a851bb420b2252961",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6ac4da61851bb420b2252962",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": null
+          },
+          {
+            "id": "6ac4da77851bb420b2252963",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          },
+          {
+            "id": "6ac4da7b851bb420b2252964",
+            "label": "۱۵ ثانیه",
+            "value": "15",
+            "credit": 3
+          },
+          {
+            "id": "6ac4da80851bb420b2252965",
+            "label": "۲۰ ثانیه",
+            "value": "20",
+            "credit": 4
+          },
+          {
+            "id": "6ac4da85851bb420b2252966",
+            "label": "۲۵ ثانیه",
+            "value": "20",
+            "credit": 5
+          },
+          {
+            "id": "6ac4da89851bb420b2252967",
+            "label": "۳۰ ثانیه",
+            "value": "30",
+            "credit": 6
+          }
+        ]
+      }
+    ],
+    "credit": 580,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "premium",
+      "speed": "balanced",
+      "promptAdherence": "good",
+      "video": {
+        "generatesAudio": true,
+        "generatesSpeech": true,
+        "persianSpeech": true,
+        "lipSync": true,
+        "characterConsistency": true,
+        "cinematicMotion": true,
+        "realisticMotion": true,
+        "animation": true
+      },
+      "notes": "good for character replacement, motion copy, and multi reference video generation. Reference video must be at most 15s"
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-10-19T13:18:47.350Z",
+    "createdAt": "2026-10-06T11:25:18.860Z",
+    "startingCredit": 580,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_159",
+      "creditCost": 580,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 8,
+    "title": "Veo 3.1 Fast",
+    "name": "veo-3.1-fast",
+    "description": "برای ویدیوهای واقع‌گرایانه و سینمایی و انیمیشن با صدای طبیعی فارسی، دیالوگ و افکت‌های همزمان",
+    "icon": {
+      "id": 719,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-11T13:40:50.563Z",
+      "createdAt": "2026-08-11T13:40:50.563Z",
+      "url": "https://blog.hooshang.ai/api/media/file/veo-3.1-fast-icon.png",
+      "thumbnailURL": null,
+      "filename": "veo-3.1-fast-icon.png",
+      "mimeType": "image/png",
+      "filesize": 17049,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "google",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "69f0ba950433cd034e920e75",
+        "fieldName": "image",
+        "label": "عکس ورودی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": "عکس شروع",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "start_frame"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "69f0bab1066d3d0029bcd59f",
+        "fieldName": "last_frame",
+        "label": "فریم آخر",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": "عکس پایانی",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "end_frame"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "69f0baa70433cd034e920e77",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": "مدت زمان",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "69f0bad50433cd034e920e78",
+            "label": "۴ ثانیه",
+            "value": "4",
+            "credit": null
+          },
+          {
+            "id": "69f0badb0433cd034e920e79",
+            "label": "۶ ثانیه",
+            "value": "6",
+            "credit": 1.5
+          },
+          {
+            "id": "69f0bae10433cd034e920e7a",
+            "label": "۸ ثانیه",
+            "value": "8",
+            "credit": 2
+          }
+        ]
+      }
+    ],
+    "credit": 600,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "high",
+      "speed": "balanced",
+      "promptAdherence": "good",
+      "video": {
+        "generatesAudio": true,
+        "generatesSpeech": true,
+        "persianSpeech": true,
+        "lipSync": false,
+        "characterConsistency": false,
+        "cinematicMotion": false,
+        "realisticMotion": false,
+        "animation": false
+      }
+    },
+    "index": 1,
+    "status": "published",
+    "updatedAt": "2026-08-13T06:29:33.408Z",
+    "createdAt": "2026-04-28T13:49:27.759Z",
+    "startingCredit": 480,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_8",
+      "creditCost": 600,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 171,
+    "title": "Kling 4.0",
+    "name": "4-0-reference",
+    "description": "از رفرنس‌های مختلف ویدئو بسازید. عکس و ویدئو ورودی رفرنس رو به ویدئو‌های جدید تبدیل کنید",
+    "icon": null,
+    "imagePreview": null,
+    "provider": "kling",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "a53186c21cd4d9444166a34f",
+        "fieldName": "image_urls[]",
+        "label": "تصاویر مرجع",
+        "type": "image",
+        "maxFiles": 10,
+        "maxFileSizeMb": 10,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [
+          "image/jpeg",
+          "image/png",
+          "image/webp"
+        ],
+        "options": []
+      },
+      {
+        "id": "185b01cedf95dc9e1ffac2c3",
+        "fieldName": "video_urls[]",
+        "label": "ویدیوهای مرجع",
+        "type": "video",
+        "maxFiles": 5,
+        "maxFileSizeMb": 50,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_video",
+          "source_video"
+        ],
+        "acceptedMimeTypes": [
+          "video/mp4",
+          "video/quicktime"
+        ],
+        "options": []
+      },
+      {
+        "id": "3cc60ca72996a50dd1b73cd3",
+        "fieldName": "keep_original_sound",
+        "label": "حفظ صدای اصلی",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "2d143a34430309e29c62007d",
+            "label": "خیر",
+            "value": "false",
+            "credit": null
+          },
+          {
+            "id": "81b2def5bb500a309060c3db",
+            "label": "بله",
+            "value": "true",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "75efba555d82c007f48dc3e2",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "c7e1cbb991cf9952388bfbb0",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": null
+          },
+          {
+            "id": "f508c5c8c3b588fce367bf67",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          },
+          {
+            "id": "1e9ed041a4304b1b8a6e8665",
+            "label": "۱۵ ثانیه",
+            "value": "15",
+            "credit": 3
+          },
+          {
+            "id": "bc9c994dbff96cae8dd1403d",
+            "label": "۲۰ ثانیه",
+            "value": "20",
+            "credit": 4
+          },
+          {
+            "id": "08ebee671a166a0edf1f03cb",
+            "label": "۲۵ ثانیه",
+            "value": "25",
+            "credit": 5
+          },
+          {
+            "id": "3df6329b679b41e600b6ca1f",
+            "label": "۳۰ ثانیه",
+            "value": "30",
+            "credit": 6
+          }
+        ]
+      },
+      {
+        "id": "29e7fad4d1a79f23accf0e58",
+        "fieldName": "resolution",
+        "label": "رزولوشن",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": true,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "355ebe226b9251aa06e98c48",
+            "label": "720p",
+            "value": "720p",
+            "credit": 1
+          },
+          {
+            "id": "16c43da6e783ae37b2d3e18c",
+            "label": "1080p",
+            "value": "1080p",
+            "credit": 1.5
+          }
+        ]
+      },
+      {
+        "id": "d31238dc0c698faafae73d84",
+        "fieldName": "aspect_ratio",
+        "label": "نسبت ابعاد",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "c5e78f933ef36e5093c5ccaf",
+            "label": "خودکار",
+            "value": "auto",
+            "credit": null
+          },
+          {
+            "id": "17fbe1860c54142bdff66048",
+            "label": "16:9",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "1d05ae769413678b96c469a5",
+            "label": "9:16",
+            "value": "9:16",
+            "credit": null
+          },
+          {
+            "id": "a550d98237046d4afc5dc567",
+            "label": "1:1",
+            "value": "1:1",
+            "credit": null
+          },
+          {
+            "id": "7b8235d19b030dbe8eb5f03f",
+            "label": "21:9",
+            "value": "21:9",
+            "credit": null
+          }
+        ]
+      }
+    ],
+    "credit": 750,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "premium",
+      "speed": "balanced",
+      "promptAdherence": "excellent",
+      "video": {
+        "generatesAudio": true,
+        "generatesSpeech": true,
+        "persianSpeech": true,
+        "lipSync": true,
+        "characterConsistency": true,
+        "cinematicMotion": true,
+        "realisticMotion": true,
+        "animation": true
+      },
+      "notes": "Good for character replacement and motion copy, works perfect with video references and image references"
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-10-24T10:48:39.455Z",
+    "createdAt": "2026-10-24T07:19:53.702Z",
+    "startingCredit": 750,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_171",
+      "creditCost": 750,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  },
+  {
+    "id": 112,
+    "title": "Kling 3 Omni",
+    "name": "kling-v3-omni-video",
+    "description": "برای ویدیوهای حرفه‌ای با چند شات، کاراکتر ثابت، دیالوگ و کنترل دقیق صحنه",
+    "icon": {
+      "id": 713,
+      "alt": null,
+      "caption": null,
+      "updatedAt": "2026-08-11T13:23:48.354Z",
+      "createdAt": "2026-08-11T13:23:48.354Z",
+      "url": "https://blog.hooshang.ai/api/media/file/kling3omni-icon.png",
+      "thumbnailURL": null,
+      "filename": "kling3omni-icon.png",
+      "mimeType": "image/png",
+      "filesize": 16263,
+      "width": 256,
+      "height": 256,
+      "focalX": 50,
+      "focalY": 50,
+      "sizes": {
+        "thumbnail": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "square": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "small": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "medium": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "large": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "xlarge": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        },
+        "og": {
+          "url": null,
+          "width": null,
+          "height": null,
+          "mimeType": null,
+          "filesize": null,
+          "filename": null
+        }
+      }
+    },
+    "imagePreview": null,
+    "provider": "kwaivgi",
+    "type": "video",
+    "inputs": [
+      {
+        "id": "6a53dd202e92ef356c2d0f43",
+        "fieldName": "start_image",
+        "label": "فریم اولیه",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "start_frame"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a53dd512e92ef356c2d0f44",
+        "fieldName": "end_image",
+        "label": "فریم پایانی",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "تصویر پایانی",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "end_frame"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a53e0a92e92ef356c2d0f5b",
+        "fieldName": "duration",
+        "label": "مدت زمان",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a53e0b72e92ef356c2d0f5c",
+            "label": "۵ ثانیه",
+            "value": "5",
+            "credit": 1
+          },
+          {
+            "id": "6a53e0c42e92ef356c2d0f5d",
+            "label": "۱۰ ثانیه",
+            "value": "10",
+            "credit": 2
+          },
+          {
+            "id": "6a53e0cb2e92ef356c2d0f5e",
+            "label": "۱۵ ثانیه",
+            "value": "15",
+            "credit": 3
+          }
+        ]
+      },
+      {
+        "id": "6a53e0372e92ef356c2d0f55",
+        "fieldName": "aspect_ratio",
+        "label": "ابعاد خروجی",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a53e0482e92ef356c2d0f56",
+            "label": "افقی",
+            "value": "16:9",
+            "credit": null
+          },
+          {
+            "id": "6a53e05e2e92ef356c2d0f57",
+            "label": "عمودی",
+            "value": "9:16",
+            "credit": null
+          },
+          {
+            "id": "6a53e091c08ae1001e771ebc",
+            "label": "مربعی",
+            "value": "1:1",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6a53deb32e92ef356c2d0f51",
+        "fieldName": "mode",
+        "label": "کیفیت",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a53ded32e92ef356c2d0f52",
+            "label": "720",
+            "value": "standard",
+            "credit": 1
+          },
+          {
+            "id": "6a53dee82e92ef356c2d0f53",
+            "label": "1080",
+            "value": "pro",
+            "credit": 1.5
+          },
+          {
+            "id": "6a53e1402e92ef356c2d0f5f",
+            "label": "4k",
+            "value": "4k",
+            "credit": 2.5
+          }
+        ]
+      },
+      {
+        "id": "6a54a5f3de8394569ead80a2",
+        "fieldName": "reference_images[]",
+        "label": "تصاویر مرجع (برای استفاده به عنوان اجزا، استایل‌ها و یا سکانس‌های مورد استفاده)",
+        "type": "image",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "آپلود",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_image",
+          "style_reference"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a53dd622e92ef356c2d0f45",
+        "fieldName": "reference_video",
+        "label": "ویدئوی مرجع (برای ایده گرفتن یا اعمال تغییرات)",
+        "type": "video",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "آپلود",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [
+          "reference_video",
+          "source_video"
+        ],
+        "acceptedMimeTypes": [],
+        "options": []
+      },
+      {
+        "id": "6a53ddad2e92ef356c2d0f46",
+        "fieldName": "video_reference_type",
+        "label": "نحوه استفاده از ویدئو‌ی مرجع",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": "نحوه استفاده از ویدئو‌ی مرجع",
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a53dddcc08ae1001e771eba",
+            "label": "الگو گرفتن از استایل، دوربین و ...",
+            "value": "feature",
+            "credit": null
+          },
+          {
+            "id": "6a53ddd82e92ef356c2d0f48",
+            "label": "ادیت ویدئوی مرجع",
+            "value": "base",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6a53de0c2e92ef356c2d0f49",
+        "fieldName": "keep_original_sound",
+        "label": "صدای ویدئوی‌ مرجع باقی بماند؟",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a53de452e92ef356c2d0f4a",
+            "label": "بله",
+            "value": "true",
+            "credit": null
+          },
+          {
+            "id": "6a53de572e92ef356c2d0f4c",
+            "label": "خیر",
+            "value": "false",
+            "credit": null
+          }
+        ]
+      },
+      {
+        "id": "6a53de6c2e92ef356c2d0f4d",
+        "fieldName": "generate_audio",
+        "label": "ساخت صدا",
+        "type": "select",
+        "maxFiles": null,
+        "maxFileSizeMb": null,
+        "isRequired": false,
+        "placeholder": null,
+        "maxLength": null,
+        "credit": null,
+        "semanticRole": [],
+        "acceptedMimeTypes": [],
+        "options": [
+          {
+            "id": "6a53de862e92ef356c2d0f4e",
+            "label": "داشته باشد",
+            "value": "true",
+            "credit": 1.5
+          },
+          {
+            "id": "6a53de99c08ae1001e771ebb",
+            "label": "نداشته باشد",
+            "value": "false",
+            "credit": 1
+          }
+        ]
+      }
+    ],
+    "credit": 840,
+    "advisorProfile": {
+      "enabled": true,
+      "quality": "high",
+      "speed": "slow",
+      "promptAdherence": "basic",
+      "video": {
+        "generatesAudio": true,
+        "generatesSpeech": true,
+        "persianSpeech": false,
+        "lipSync": true,
+        "characterConsistency": true,
+        "cinematicMotion": true,
+        "realisticMotion": true,
+        "animation": false
+      },
+      "notes": "برای ویدیوهای حرفه‌ای با چند شات، کاراکتر ثابت، دیالوگ و کنترل دقیق صحنه"
+    },
+    "index": null,
+    "status": "published",
+    "updatedAt": "2026-08-13T06:18:31.795Z",
+    "createdAt": "2026-07-12T18:34:57.392Z",
+    "startingCredit": 840,
+    "featureAccess": {
+      "hasAccess": true,
+      "featureEnabled": true,
+      "featureKey": "imagination_model_112",
+      "creditCost": 840,
+      "hasSufficientCredits": true,
+      "meter": "premium_credit"
+    }
+  }
+]

@@ -1,0 +1,31 @@
+# Node dependencies
+node_modules/
+package-lock.json
+
+# Sensitive Auth / User Data (Never commit!)
+session.json
+.profile/
+.hooshang-mcp/
+.env
+*.env
+*.env.local
+
+# Media outputs & Downloads
+*.png
+*.jpg
+*.jpeg
+*.mp4
+*.webm
+*.mp3
+downloads/
+temp/
+
+# Logs & Debugging
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS Artifacts
+.DS_Store
+Thumbs.db

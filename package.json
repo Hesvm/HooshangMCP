@@ -1,0 +1,60 @@
+{
+  "name": "hooshang-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol (MCP) Server for Hooshang AI (هوشنگ) - AI Video Generation, Storyboard Images, Soundtracks & Film Production",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "hooshang-mcp": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "login": "node bin/cli.js login",
+    "status": "node bin/cli.js status"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hesvm/HooshangMCP.git"
+  },
+  "homepage": "https://github.com/Hesvm/HooshangMCP#readme",
+  "bugs": {
+    "url": "https://github.com/Hesvm/HooshangMCP/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "hooshang",
+    "hooshang-ai",
+    "claude-desktop",
+    "cursor",
+    "antigravity",
+    "ai-video",
+    "veo",
+    "kling",
+    "pixverse",
+    "filmmaking",
+    "iranian-ai"
+  ],
+  "author": "Hesam Mousavi (Hesvm)",
+  "license": "MIT",
+  "files": [
+    "bin",
+    "data",
+    "index.js",
+    "api-client.js",
+    "auth-manager.js",
+    "browser-client.js",
+    "image-generator.js",
+    "video-generator.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "axios": "^1.8.1",
+    "dotenv": "^16.4.7",
+    "puppeteer-core": "^24.3.0",
+    "undici": "^7.4.0",
+    "zod": "^3.24.2"
+  }
+}

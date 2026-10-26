@@ -1,0 +1,122 @@
+[
+  {
+    "id": 164,
+    "title": "PixVerse V6",
+    "name": "v6",
+    "provider": "pixverse",
+    "credit": 140,
+    "description": "ویدیوی ۱ تا ۱۵ ثانیه از متن، تصویر، فریم اول/آخر یا چند تصویر مرجع؛ با گزینه صدای همزمان."
+  },
+  {
+    "id": 161,
+    "title": "Vidu Q4",
+    "name": "q4",
+    "provider": "vidu",
+    "credit": 200,
+    "description": "ویدیوی سینمایی با صدای همزمان، تا ۴K و ۱۶ ثانیه؛ از تصویر اول یا چند تصویر و صدای مرجع."
+  },
+  {
+    "id": 163,
+    "title": "Wan 3.0",
+    "name": "3-0-video",
+    "provider": "wan",
+    "credit": 250,
+    "description": "ویدیوی تا ۳۰ ثانیه از متن، فریم اول/آخر یا رفرنس‌های تصویر، ویدیو و صدا؛ با صدای همزمان."
+  },
+  {
+    "id": 116,
+    "title": "Seedance 2 Mini",
+    "name": "seedance-2.0-mini",
+    "provider": "bytedance",
+    "credit": 250,
+    "description": "تولید سریع و اقتصادی · ۴ تا ۱۵ ثانیه · 480p/720p · صدای همزمان · image-to-Video · رفرنس چندرسانه‌ای · مناسب تست ایده و محتوای حجمی · بدون صدای فارسی"
+  },
+  {
+    "id": 162,
+    "title": "MiniMax H3",
+    "name": "h3",
+    "provider": "minimax",
+    "credit": 300,
+    "description": "ویدیوی تا ۲K با صدای استریو؛ از متن، فریم اول/آخر یا چند تصویر، ویدیو و صدای مرجع."
+  },
+  {
+    "id": 7,
+    "title": "Kling 2.5 Turbo Pro",
+    "name": "kling-v2.5-turbo-pro",
+    "provider": "kwaivgi",
+    "credit": 360,
+    "description": "مناسب ویدیوهای سینمایی با حرکت طبیعی، دوربین پویا و جزئیات بالا"
+  },
+  {
+    "id": 43,
+    "title": "Grok Imagine video 1.5",
+    "name": "grok-imagine-video-1.5",
+    "provider": "xai",
+    "credit": 400,
+    "description": "واقع‌گرایانه و سریع، با حرکت طبیعی‌تر، صدای همزمان و lip-sync بهتر فارسی"
+  },
+  {
+    "id": 166,
+    "title": "Kling 3.0 Turbo",
+    "name": "3-0-turbo",
+    "provider": "kling",
+    "credit": 450,
+    "description": "ویدیوی سریع ۷۲۰p/۱۰۸۰p از متن یا تصویر، با صدای همزمان."
+  },
+  {
+    "id": 152,
+    "title": "Gemini Omni Flash 1.1",
+    "name": "gemini-omni-1.1",
+    "provider": "google",
+    "credit": 500,
+    "description": "قوی‌ترین مدل گوگل با پشتیبانی خوب از زبان فارسی"
+  },
+  {
+    "id": 1,
+    "title": "Wan 2.6 Image to Video",
+    "name": "wan-2.6-i2v",
+    "provider": "wan-video",
+    "credit": 500,
+    "description": "برای جان‌بخشیدن به عکس‌ها با حرکت طبیعی، حفظ سوژه و صحنه‌های واقع‌گرایانه"
+  },
+  {
+    "id": 117,
+    "title": "Seedance 2.5",
+    "name": "seedance-2.5",
+    "provider": "bytedance",
+    "credit": 550,
+    "description": "ویدیو سینمایی · تا ۳۰ ثانیه · 4K · صدای همزمان · دیالوگ چندزبانه · چند شات · حفظ کاراکتر · تا ۵۰ رفرنس · مناسب تبلیغات و ویدیوهای حرفه‌ای · بدون صدای فارسی"
+  },
+  {
+    "id": 159,
+    "title": "Wan 3 Prime",
+    "name": "3-0-video-prime",
+    "provider": "wan",
+    "credit": 580,
+    "description": "مناسب تغییر کاراتر‌های داخل ویدئو، ساخت ویدئو با چند رفرنس مختلف، و کارهای ترندی مخصوص اینستاگرام و تیک‌تاک"
+  },
+  {
+    "id": 8,
+    "title": "Veo 3.1 Fast",
+    "name": "veo-3.1-fast",
+    "provider": "google",
+    "credit": 600,
+    "description": "برای ویدیوهای واقع‌گرایانه و سینمایی و انیمیشن با صدای طبیعی فارسی، دیالوگ و افکت‌های همزمان"
+  },
+  {
+    "id": 171,
+    "title": "Kling 4.0",
+    "name": "4-0-reference",
+    "provider": "kling",
+    "credit": 750,
+    "description": "از رفرنس‌های مختلف ویدئو بسازید. عکس و ویدئو ورودی رفرنس رو به ویدئو‌های جدید تبدیل کنید"
+  },
+  {
+    "id": 112,
+    "title": "Kling 3 Omni",
+    "name": "kling-v3-omni-video",
+    "provider": "kwaivgi",
+    "credit": 840,
+    "description": "برای ویدیوهای حرفه‌ای با چند شات، کاراکتر ثابت، دیالوگ و کنترل دقیق صحنه"
+  }
+]
