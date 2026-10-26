@@ -12,12 +12,129 @@ import { extractBrowserSession } from '../browser-extractor.js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+/**
+ * Helper to ensure the user is authenticated (checks session -> browser extract -> login window)
+ */
+async function ensureAuthenticated(options = { forcePrompt: false }) {
+  if (!options.forcePrompt) {
+    // 1. Check existing session
+    const currentAuth = await checkAuthStatus();
+    if (currentAuth.authenticated && currentAuth.user) {
+      return { success: true, user: currentAuth.user, source: 'existing_session' };
+    }
+
+    // 2. Try auto browser extraction
+    console.log('🔍 Checking for active Hooshang login in your local browsers...');
+    const extracted = await extractBrowserSession();
+    if (extracted.success && extracted.user) {
+      console.log(`🎉 Auto-detected active session in ${extracted.source}!`);
+      return { success: true, user: extracted.user, source: extracted.source };
+    }
+  }
+
+  // 3. Open interactive login window
+  console.log('\n🚀 Opening Hooshang AI login window...');
+  console.log('👉 Please enter your Phone Number (SMS code) or sign in with Google in the opened window.');
+  console.log('⏳ Waiting for authentication...\n');
+
+  let browser;
+  try {
+    browser = await launchBrowser({ headless: false });
+  } catch (err) {
+    console.error('❌ Could not launch browser:', err.message);
+    console.log('💡 Tip: You can set your session token manually with:');
+    console.log('   npx github:Hesvm/HooshangMCP token <your-token>\n');
+    return { success: false, error: err.message };
+  }
+
+  const pages = await browser.pages();
+  const page = pages[0] || (await browser.newPage());
+  await page.goto('https://hooshang.ai', { waitUntil: 'domcontentloaded', timeout: 60000 });
+
+  return new Promise((resolve) => {
+    let isDone = false;
+    const interval = setInterval(async () => {
+      try {
+        const cookies = await page.cookies();
+        const sessionCookie = cookies.find(c => c.name === '__Secure-authjs.session-token');
+
+        if (sessionCookie && sessionCookie.value && !isDone) {
+          isDone = true;
+          clearInterval(interval);
+
+          await captureSessionFromPage(page);
+          const auth = await checkAuthStatus();
+
+          setTimeout(async () => {
+            try { await browser.close(); } catch (e) {}
+          }, 1000);
+
+          if (auth.authenticated && auth.user) {
+            resolve({ success: true, user: auth.user, source: 'browser_login' });
+          } else {
+            resolve({ success: false, error: 'Session cookie captured but verification failed' });
+          }
+        }
+      } catch (e) {}
+    }, 2000);
+
+    setTimeout(() => {
+      if (!isDone) {
+        clearInterval(interval);
+        try { browser.close(); } catch (e) {}
+        resolve({ success: false, error: 'Login timed out after 5 minutes' });
+      }
+    }, 300000);
+  });
+}
+
 async function runCli() {
   const args = process.argv.slice(2);
   const command = args[0] ? args[0].toLowerCase() : '';
 
-  // 1. Auto-Config Installer into AI clients
-  if (command === 'install' || command === 'setup' || command === '--install') {
+  // 1. ALL-IN-ONE 1-CLICK SETUP
+  if (command === 'setup' || command === '--setup') {
+    console.log('\n============================================================');
+    console.log('🚀 Hooshang AI MCP - All-in-One 1-Click Setup');
+    console.log('============================================================\n');
+
+    // Step 1: Authenticate
+    console.log('--- Step 1/2: Authenticating with Hooshang AI ---');
+    const authResult = await ensureAuthenticated();
+
+    if (!authResult.success) {
+      console.error('\n❌ Authentication failed:', authResult.error);
+      process.exit(1);
+    }
+
+    console.log(`✅ Authenticated as: ${authResult.user.name || 'User'} (${authResult.user.phoneNumber || 'N/A'})\n`);
+
+    // Step 2: Inject Configurations
+    console.log('--- Step 2/2: Auto-Configuring AI Clients ---');
+    const results = await installMcpConfig();
+    let installedCount = 0;
+
+    for (const r of results) {
+      if (r.installed) {
+        installedCount++;
+        console.log(`✅ ${r.name}: Configured successfully!`);
+        console.log(`   📁 ${r.path}`);
+      } else {
+        console.log(`⚪ ${r.name}: Skipped (${r.reason || 'not detected'})`);
+      }
+    }
+
+    console.log('\n============================================================');
+    console.log('🎉 Setup Completed Successfully!');
+    console.log(`👤 Account:  ${authResult.user.name || 'User'} (${authResult.user.phoneNumber || 'N/A'})`);
+    console.log(`⚡ Installed: ${installedCount} AI Client(s) configured`);
+    console.log('👉 Action needed: Restart Claude Desktop or Cursor to start using Hooshang!');
+    console.log('============================================================\n');
+    process.exit(0);
+  }
+
+  // 2. Auto-Config Installer into AI clients
+  if (command === 'install' || command === '--install') {
     console.log('\n============================================================');
     console.log('⚡ Hooshang AI MCP - Automatic Client Installer');
     console.log('============================================================');
@@ -48,7 +165,7 @@ async function runCli() {
     process.exit(0);
   }
 
-  // 2. Direct Browser Cookie Extraction
+  // 3. Direct Browser Cookie Extraction
   if (command === 'extract' || command === '--extract') {
     console.log('\n============================================================');
     console.log('🔍 Hooshang AI - Auto Browser Cookie Extraction');
@@ -70,96 +187,25 @@ async function runCli() {
     }
   }
 
-  // 3. Interactive browser login (with automatic extraction pre-check)
+  // 4. Interactive browser login
   if (command === 'login' || command === '--login') {
     console.log('\n============================================================');
     console.log('🔑 Hooshang AI - Smart Login');
     console.log('============================================================');
 
-    // First attempt quick local browser extraction
-    console.log('Checking if you are already logged in to your local browser...');
-    const auto = await extractBrowserSession();
-    if (auto.success) {
-      console.log(`🎉 Auto-detected existing login from ${auto.source}!`);
-      console.log(`✅ Welcome back, ${auto.user.name || 'User'} (${auto.user.phoneNumber || 'N/A'})!`);
-      console.log(`📁 Saved to: ${GLOBAL_SESSION_FILE}`);
-      console.log('============================================================\n');
-      console.log('💡 Tip: Run "hooshang-mcp install" to auto-configure Claude Desktop.\n');
+    const auth = await ensureAuthenticated({ forcePrompt: false });
+    if (auth.success) {
+      console.log(`✅ Welcome, ${auth.user.name || 'User'} (${auth.user.phoneNumber || 'N/A'})!`);
+      console.log(`📁 Session saved to: ${GLOBAL_SESSION_FILE}`);
+      console.log('\n💡 Tip: Run "hooshang-mcp install" to auto-configure Claude Desktop.\n');
       process.exit(0);
-    }
-
-    console.log('No local session found. Launching browser login window...');
-    console.log('👉 Please log in with your Phone Number (SMS) or Google account.');
-    console.log('⏳ Listening for authenticated session in background...\n');
-
-    let browser;
-    try {
-      browser = await launchBrowser({ headless: false });
-    } catch (err) {
-      console.error('❌ Could not launch browser:', err.message);
-      console.log('💡 Tip: You can set your session token manually with:');
-      console.log('   npx hooshang-mcp token <your-token>\n');
+    } else {
+      console.error('❌ Login failed:', auth.error);
       process.exit(1);
     }
-
-    const pages = await browser.pages();
-    const page = pages[0] || (await browser.newPage());
-
-    await page.goto('https://hooshang.ai', { waitUntil: 'domcontentloaded', timeout: 60000 });
-
-    let isCaptured = false;
-    const checkInterval = setInterval(async () => {
-      try {
-        const cookies = await page.cookies();
-        const sessionCookie = cookies.find(c => c.name === '__Secure-authjs.session-token');
-
-        if (sessionCookie && sessionCookie.value && !isCaptured) {
-          isCaptured = true;
-          clearInterval(checkInterval);
-
-          console.log('🎉 Detected active session token!');
-          await captureSessionFromPage(page);
-
-          console.log('🔍 Verifying session with Hooshang AI server...');
-          const auth = await checkAuthStatus();
-
-          if (auth.authenticated && auth.user) {
-            console.log('\n============================================================');
-            console.log('✅ Authentication Successful!');
-            console.log(`👤 User: ${auth.user.name || 'Hooshang User'} (${auth.user.phoneNumber || 'N/A'})`);
-            console.log(`🆔 ID:   ${auth.user.id}`);
-            console.log(`📁 Saved to: ${GLOBAL_SESSION_FILE}`);
-            console.log('============================================================\n');
-            console.log('🎉 You are all set! Run "hooshang-mcp install" to configure Claude Desktop.');
-          } else {
-            console.log('⚠️ Session cookie saved, but server verification returned:', auth.status);
-          }
-
-          setTimeout(async () => {
-            try {
-              await browser.close();
-            } catch (e) {}
-            process.exit(0);
-          }, 1500);
-        }
-      } catch (err) {
-        // Page might be navigating, ignore
-      }
-    }, 2000);
-
-    setTimeout(() => {
-      if (!isCaptured) {
-        clearInterval(checkInterval);
-        console.log('\n⏱️ Login timed out after 5 minutes. Please try again.');
-        try { browser.close(); } catch (e) {}
-        process.exit(1);
-      }
-    }, 300000);
-
-    return;
   }
 
-  // 4. Direct token setter
+  // 5. Direct token setter
   if (command === 'token' || command === '--token') {
     const token = args[1];
     if (!token) {
@@ -173,7 +219,7 @@ async function runCli() {
     process.exit(0);
   }
 
-  // 5. Status check
+  // 6. Status check
   if (command === 'status' || command === '--status') {
     console.log('🔍 Checking Hooshang AI authentication status...');
     const session = getSessionData();
@@ -186,20 +232,20 @@ async function runCli() {
     process.exit(0);
   }
 
-  // 6. Logout / Clear session
+  // 7. Logout / Clear session
   if (command === 'logout' || command === '--logout') {
     clearSession();
     console.log('✅ Hooshang AI credentials removed successfully.');
     process.exit(0);
   }
 
-  // 7. Help
+  // 8. Help
   if (command === 'help' || command === '--help' || command === '-h') {
     console.log(`
 Hooshang AI MCP Server
 
 Usage:
-  hooshang-mcp                Start the MCP server (Stdio mode for Claude/Cursor/Antigravity)
+  hooshang-mcp setup          All-in-one setup: authenticate and auto-configure Claude/Cursor
   hooshang-mcp install        Auto-inject configuration into Claude Desktop, Cursor, Antigravity
   hooshang-mcp extract        Auto-extract active session from local browser cookies
   hooshang-mcp login          Smart login (auto-detects local login, or opens browser window)

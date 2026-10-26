@@ -1,6 +1,5 @@
 # 🎬 Hooshang AI MCP Server (سرور ام‌سی‌پی هوشنگ)
 
-[![npm version](https://img.shields.io/badge/npm-hooshang--mcp-cb3837.svg?style=flat-square&logo=npm)](https://www.npmjs.com/package/hooshang-mcp)
 [![GitHub Stars](https://img.shields.io/github/stars/Hesvm/HooshangMCP?style=flat-square&color=yellow)](https://github.com/Hesvm/HooshangMCP)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![MCP Protocol](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-8A2BE2.svg?style=flat-square)](https://modelcontextprotocol.io)
@@ -19,38 +18,22 @@
 - **Claude Code CLI**
 - **Cline / Roo Code**
 
-با این افزونه، هوش مصنوعی می‌تواند به عنوان دستیار کارگردانی، فیلم‌سازی و تولید محتوا برای شما ویدیوهای B-Roll، شات‌های استوری‌بورد و ساندترک‌های سینمایی بسازد و مستقیماً روی کامپیوترتان دانلود کند.
+با این افزونه، هوش مصنوعی می‌تواند به عنوان دستیار کارگردانی، فیلم‌سازی و تولید محتوا برای شما ویدیوهای B-Roll، شات‌های استوری‌بورد و ساندترک‌های سینمایی بسازد و مستقیماً روی کامپیوترتان ذخیره کند.
 
 ---
 
-### ✨ قابلیت‌های فوق‌العاده جدید (۱۰۰٪ خودکار)
+### ⚡ راه‌اندازی فقط با یک دستور (۱۰۰٪ خودکار)
 
-1. **⚡ نصب و کانفیگ خودکار با یک دستور (`install`):**
-   دیگر نیازی به باز کردن فایل‌های JSON و کپی‌پیست تنظیمات نیست! دستور `install` به صورت خودکار نرم‌افزارهای **Claude Desktop**، **Cursor**، **Antigravity** و **Cline** را در سیستم پیدا کرده و تنظیمات MCP هوشنگ را به آن‌ها تزریق می‌کند.
-2. **🔍 استخراج خودکار سشن بدون نیاز به لاگین مجدد (`extract`):**
-   اگر قبلاً در مرورگر سیستم خود (مانند فایرفاکس) وارد سایت هوشنگ شده باشید، این دستور نشست شما را مستقیماً از حافظه سیستم استخراج، اعتبارسنجی و ذخیره می‌کند.
-3. **🔑 لاگین هوشمند با پیامک (`login`):**
-   در صورت عدم وجود سشن، یک پنجره باز شده و پس از وارد کردن شماره و کد پیامک، سشن ذخیره و مرورگر خودکار بسته می‌شود.
-4. **پشتیبانی از ۱۵+ مدل ویدیویی هوشنگ:**
-   دسترسی مستقیم به **Veo 3.1**، **Kling 2.5 / 3 / 4**، **PixVerse V6**، **Wan 3.0**، **MiniMax** و **SeeDance**.
-5. **تولید تصویر و فریم استوری‌بورد:**
-   ساخت سریع فریم‌های سینمایی و کانسپت با مدل‌های **کمال (Kamal)**، **GPT Image** و **Nano Banana**.
-
----
-
-### 🚀 شروع فوق‌العاده سریع در ۲ دستور (Zero-Config)
-
-کاربران فقط با اجرای دو دستور زیر در ترمینال، بدون دست زدن به هیچ فایلی به هوشنگ متصل می‌شوند:
+کاربران **هیچ نیازی به تنظیمات دستی یا کپی‌پیست کد ندارند**. فقط ترمینال سیستم (PowerShell یا Terminal) را باز کرده و این یک خط دستور را اجرا کنید:
 
 ```bash
-# مرحله ۱: استخراج خودکار نشست کاربری یا لاگین هوشمند
-npx github:Hesvm/HooshangMCP login
-
-# مرحله ۲: تزریق خودکار کانفیگ به Claude Desktop و سایر محیط‌ها
-npx github:Hesvm/HooshangMCP install
+npx github:Hesvm/HooshangMCP setup
 ```
 
-پس از اجرای دستور دوم، برنامه Claude Desktop یا Cursor خود را ریستارت کنید؛ تمام ابزارهای هوشنگ آماده استفاده هستند!
+#### این دستور دقیقاً چه می‌کند؟
+1. **احراز هویت هوشمند:** اگر در مرورگر سیستم‌تان در هوشنگ لاگین باشید، سشن را در کمتر از ۱ ثانیه به صورت خودکار شناسایی و ذخیره می‌کند. در غیر این صورت، پنجره ورود با پیامک باز می‌شود.
+2. **تزریق خودکار کانفیگ:** برنامه‌های **Claude Desktop**، **Antigravity** و **Cursor** را در سیستم شناسایی کرده و کانفیگ MCP هوشنگ را بدون دست زدن به سایر افزونه‌های شما به آن‌ها اضافه می‌کند.
+3. **تمام!** فقط کافیست Claude Desktop یا Cursor را یک‌بار ببندید و باز کنید.
 
 > **بررسی وضعیت اتصال:**
 > ```bash
@@ -59,9 +42,35 @@ npx github:Hesvm/HooshangMCP install
 
 ---
 
-### 💻 کانفیگ دستی (در صورت تمایل)
+### ✨ قابلیت‌ها
 
-اگر می‌خواهید کانفیگ را به صورت دستی وارد کنید:
+- **دسترسی به ۱۵+ مدل ویدیویی هوشنگ:**
+  تولید ویدیوهای سینمایی با مدل‌های **Veo 3.1**، **Kling 2.5 / 3 / 4**، **PixVerse V6**، **Wan 3.0**، **MiniMax** و **SeeDance**.
+- **تولید تصویر و فریم استوری‌بورد:**
+  ساخت سریع فریم‌های استوری‌بورد با مدل لوکال **کمال (Kamal)**، **GPT Image** و **Nano Banana**.
+- **ساخت موسیقی و ساندترک:**
+  تولید موزیک سینمایی متناسب با سناریو و حس صحنه.
+- **کراس‌پلتفرم کامل:**
+  پشتیبانی از ویندوز، مک و لینوکس با تشخیص خودکار مرورگر.
+
+---
+
+### 🛠️ ابزارهای در دسترس (MCP Tools)
+
+| نام ابزار | کارکرد |
+| :--- | :--- |
+| `hooshang_auth_status` | بررسی وضعیت اتصال و اعتبار نشست کاربر |
+| `hooshang_generate_video` | تولید ویدیوهای سینمایی B-Roll (با نسبت‌های ۱۶:۹، ۹:۱۶ و...) |
+| `hooshang_generate_image` | ساخت استوری‌بورد و تصاویر با مدل کمال (Kamal) |
+| `hooshang_generate_music` | ساخت ساندترک و موزیک فیلم |
+| `hooshang_download_asset` | دانلود مستقیم فایل‌های ویدیو و صوت روی کامپیوتر |
+| `hooshang_update_session` | بروزرسانی دستی کوکی یا توکن |
+
+---
+
+### 💻 کانفیگ دستی (اختیاری)
+
+اگر ترجیح می‌دهید تنظیمات را دستی وارد کنید:
 
 ```json
 {
@@ -73,19 +82,6 @@ npx github:Hesvm/HooshangMCP install
   }
 }
 ```
-
----
-
-### 🛠️ ابزارهای در دسترس (MCP Tools)
-
-| نام ابزار | کارکرد |
-| :--- | :--- |
-| `hooshang_auth_status` | بررسی اتصال و اعتبار نشست کاربر |
-| `hooshang_generate_video` | تولید ویدیوهای سینمایی B-Roll (با مدل‌های Veo, Kling, PixVerse) |
-| `hooshang_generate_image` | ساخت استوری‌بورد و تصاویر مفهومی با مدل کمال (Kamal) |
-| `hooshang_generate_music` | ساخت ساندترک و موزیک فیلم |
-| `hooshang_download_asset` | دانلود مستقیم فایل‌های ویدیو/صدا در پوشه پروژه |
-| `hooshang_update_session` | بروزرسانی دستی کوکی یا توکن |
 
 ---
 
@@ -95,44 +91,31 @@ npx github:Hesvm/HooshangMCP install
 
 A model-agnostic **Model Context Protocol (MCP)** server providing programmatic access to **Hooshang AI** (Iran's premier generative AI video, image, and music engine).
 
-Empowers AI coding and creative assistants (Claude Desktop, Cursor, Antigravity, Cline) to generate cinematic video B-rolls, storyboard frames, and musical soundtracks on demand.
+Empowers AI creative and coding assistants (Claude Desktop, Cursor, Antigravity, Cline) to generate cinematic video B-rolls, storyboard frames, and musical soundtracks on demand.
 
-### ⚡ 2-Step Zero-Touch Setup
+### ⚡ 1-Click All-in-One Setup
+
+No manual file editing, no cookie hunting. Just run:
 
 ```bash
-# Step 1: Smart login (auto-extracts existing browser session or opens prompt)
-npx github:Hesvm/HooshangMCP login
-
-# Step 2: Auto-inject MCP configuration into Claude Desktop / Cursor / Antigravity
-npx github:Hesvm/HooshangMCP install
+npx github:Hesvm/HooshangMCP setup
 ```
 
-Restart Claude Desktop or Cursor, and you're good to go!
+This single command:
+1. Auto-detects your active Hooshang login from local browsers (or prompts for phone OTP).
+2. Automatically detects and injects MCP configuration into Claude Desktop, Cursor, and Antigravity.
+3. Restarts your AI app and starts generating!
 
-### CLI Commands
+### CLI Commands Reference
 
 ```bash
+hooshang-mcp setup          # 1-click all-in-one setup (authenticate + configure)
 hooshang-mcp install        # Auto-configure Claude Desktop, Cursor & Antigravity
 hooshang-mcp extract        # Extract active session from local browser profiles
 hooshang-mcp login          # Interactive OTP browser login
 hooshang-mcp status         # Verify active session and user profile
 hooshang-mcp token <token>  # Manually set session token
 hooshang-mcp logout         # Clear saved credentials
-```
-
-### Manual Configuration
-
-Add to your `claude_desktop_config.json`:
-
-```json
-{
-  "mcpServers": {
-    "hooshang": {
-      "command": "npx",
-      "args": ["-y", "github:Hesvm/HooshangMCP"]
-    }
-  }
-}
 ```
 
 ### License
