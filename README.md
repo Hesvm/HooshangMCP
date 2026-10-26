@@ -1,6 +1,7 @@
 # 🎬 Hooshang AI MCP Server (سرور ام‌سی‌پی هوشنگ)
 
 [![npm version](https://img.shields.io/badge/npm-hooshang--mcp-cb3837.svg?style=flat-square&logo=npm)](https://www.npmjs.com/package/hooshang-mcp)
+[![GitHub Stars](https://img.shields.io/github/stars/Hesvm/HooshangMCP?style=flat-square&color=yellow)](https://github.com/Hesvm/HooshangMCP)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 [![MCP Protocol](https://img.shields.io/badge/MCP-Model%20Context%20Protocol-8A2BE2.svg?style=flat-square)](https://modelcontextprotocol.io)
 [![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-green.svg?style=flat-square)](#)
@@ -22,79 +23,52 @@
 
 ---
 
-### ✨ قابلیت‌های کلیدی
+### ✨ قابلیت‌های فوق‌العاده جدید (۱۰۰٪ خودکار)
 
-1. **لاگین هوشمند بدون نیاز به کد (Smart CLI Login):**
-   با اجرای یک دستور ساده در ترمینال، پنجره مرورگر باز می‌شود؛ شماره موبایل و کد پیامک هوشنگ خود را وارد می‌کنید و سیستم خودکار توکن امنیتی شما را بدون نیاز به کپی‌پیست دستی ذخیره می‌کند.
-2. **پشتیبانی از ۱۵+ مدل ویدیویی هوشنگ:**
+1. **⚡ نصب و کانفیگ خودکار با یک دستور (`install`):**
+   دیگر نیازی به باز کردن فایل‌های JSON و کپی‌پیست تنظیمات نیست! دستور `install` به صورت خودکار نرم‌افزارهای **Claude Desktop**، **Cursor**، **Antigravity** و **Cline** را در سیستم پیدا کرده و تنظیمات MCP هوشنگ را به آن‌ها تزریق می‌کند.
+2. **🔍 استخراج خودکار سشن بدون نیاز به لاگین مجدد (`extract`):**
+   اگر قبلاً در مرورگر سیستم خود (مانند فایرفاکس) وارد سایت هوشنگ شده باشید، این دستور نشست شما را مستقیماً از حافظه سیستم استخراج، اعتبارسنجی و ذخیره می‌کند.
+3. **🔑 لاگین هوشمند با پیامک (`login`):**
+   در صورت عدم وجود سشن، یک پنجره باز شده و پس از وارد کردن شماره و کد پیامک، سشن ذخیره و مرورگر خودکار بسته می‌شود.
+4. **پشتیبانی از ۱۵+ مدل ویدیویی هوشنگ:**
    دسترسی مستقیم به **Veo 3.1**، **Kling 2.5 / 3 / 4**، **PixVerse V6**، **Wan 3.0**، **MiniMax** و **SeeDance**.
-3. **تولید تصویر و فریم استوری‌بورد:**
+5. **تولید تصویر و فریم استوری‌بورد:**
    ساخت سریع فریم‌های سینمایی و کانسپت با مدل‌های **کمال (Kamal)**، **GPT Image** و **Nano Banana**.
-4. **ساخت ساندترک و موزیک پس‌زمینه:**
-   تولید موسیقی متن سینمایی از روی توصیفات متنی صحنه.
-5. **کراس‌پلتفرم (Cross-Platform):**
-   سازگاری کامل با سیستم‌عامل‌های **ویندوز، مک (macOS) و لینوکس**.
 
 ---
 
-### 🚀 شروع سریع در ۲ مرحله
+### 🚀 شروع فوق‌العاده سریع در ۲ دستور (Zero-Config)
 
-#### مرحله ۱: احراز هویت با یک دستور
-ترمینال سیستم خود را باز کرده و این دستور را اجرا کنید:
+کاربران فقط با اجرای دو دستور زیر در ترمینال، بدون دست زدن به هیچ فایلی به هوشنگ متصل می‌شوند:
 
 ```bash
-npx hooshang-mcp login
+# مرحله ۱: استخراج خودکار نشست کاربری یا لاگین هوشمند
+npx github:Hesvm/HooshangMCP login
+
+# مرحله ۲: تزریق خودکار کانفیگ به Claude Desktop و سایر محیط‌ها
+npx github:Hesvm/HooshangMCP install
 ```
 
-پنجره مرورگر باز می‌شود. با شماره موبایل و کد پیامک وارد هوشنگ شوید. پس از لاگین، پیام تایید در ترمینال نمایش داده شده و نشست شما به صورت امن در مسیر سیستم (`~/.hooshang-mcp/session.json`) ذخیره می‌شود.
+پس از اجرای دستور دوم، برنامه Claude Desktop یا Cursor خود را ریستارت کنید؛ تمام ابزارهای هوشنگ آماده استفاده هستند!
 
 > **بررسی وضعیت اتصال:**
 > ```bash
-> npx hooshang-mcp status
+> npx github:Hesvm/HooshangMCP status
 > ```
 
 ---
 
-#### مرحله ۲: اضافه کردن به AI Client دلخواه
+### 💻 کانفیگ دستی (در صورت تمایل)
 
-##### ۱. Claude Desktop
-فایل تنظیمات `claude_desktop_config.json` را باز کنید:
-- **ویندوز:** `%APPDATA%\Claude\claude_desktop_config.json`
-- **مک:** `~/Library/Application Support/Claude/claude_desktop_config.json`
-
-کد زیر را درون آبجکت `mcpServers` اضافه کنید:
+اگر می‌خواهید کانفیگ را به صورت دستی وارد کنید:
 
 ```json
 {
   "mcpServers": {
     "hooshang": {
       "command": "npx",
-      "args": ["-y", "hooshang-mcp"]
-    }
-  }
-}
-```
-
-##### ۲. Cursor IDE
-در بخش تنظیمات Cursor > Features > MCP Servers:
-- **نام:** `hooshang`
-- **نوع (Type):** `command`
-- **دستور:** `npx -y hooshang-mcp`
-
-##### ۳. Claude Code CLI
-```bash
-claude mcp add hooshang -- npx -y hooshang-mcp
-```
-
-##### ۴. Antigravity IDE
-فایل `~/.gemini/config/mcp_config.json` را ویرایش کرده و اضافه کنید:
-
-```json
-{
-  "mcpServers": {
-    "hooshang": {
-      "command": "npx",
-      "args": ["-y", "hooshang-mcp"]
+      "args": ["-y", "github:Hesvm/HooshangMCP"]
     }
   }
 }
@@ -123,59 +97,43 @@ A model-agnostic **Model Context Protocol (MCP)** server providing programmatic 
 
 Empowers AI coding and creative assistants (Claude Desktop, Cursor, Antigravity, Cline) to generate cinematic video B-rolls, storyboard frames, and musical soundtracks on demand.
 
-### Quickstart
-
-#### 1. Authenticate Once
-```bash
-npx hooshang-mcp login
-```
-A browser window opens. Sign in with your phone OTP. The authenticated token is securely preserved in your user home directory (`~/.hooshang-mcp/session.json`).
-
-Check connection:
-```bash
-npx hooshang-mcp status
-```
-
-#### 2. Configure Claude Desktop (`claude_desktop_config.json`)
-```json
-{
-  "mcpServers": {
-    "hooshang": {
-      "command": "npx",
-      "args": ["-y", "hooshang-mcp"]
-    }
-  }
-}
-```
-
-### Environment Variable Alternative (Headless / CI)
-You can also supply your session token via environment variable without running the browser login:
-```json
-{
-  "mcpServers": {
-    "hooshang": {
-      "command": "npx",
-      "args": ["-y", "hooshang-mcp"],
-      "env": {
-        "HOOSHANG_SESSION_TOKEN": "your-session-token-here"
-      }
-    }
-  }
-}
-```
-
----
-
-### CLI Reference
+### ⚡ 2-Step Zero-Touch Setup
 
 ```bash
-hooshang-mcp                # Start MCP Server in Stdio mode
+# Step 1: Smart login (auto-extracts existing browser session or opens prompt)
+npx github:Hesvm/HooshangMCP login
+
+# Step 2: Auto-inject MCP configuration into Claude Desktop / Cursor / Antigravity
+npx github:Hesvm/HooshangMCP install
+```
+
+Restart Claude Desktop or Cursor, and you're good to go!
+
+### CLI Commands
+
+```bash
+hooshang-mcp install        # Auto-configure Claude Desktop, Cursor & Antigravity
+hooshang-mcp extract        # Extract active session from local browser profiles
 hooshang-mcp login          # Interactive OTP browser login
 hooshang-mcp status         # Verify active session and user profile
 hooshang-mcp token <token>  # Manually set session token
-hooshang-mcp logout         # Clear local credentials
-hooshang-mcp help           # Show help documentation
+hooshang-mcp logout         # Clear saved credentials
+```
+
+### Manual Configuration
+
+Add to your `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "hooshang": {
+      "command": "npx",
+      "args": ["-y", "github:Hesvm/HooshangMCP"]
+    }
+  }
+}
 ```
 
 ### License
-Released under the [MIT License](LICENSE). Developed with ❤️ for the AI creators and developers community.
+Released under the [MIT License](LICENSE). Developed with ❤️ by [Hesam Mousavi (Hesvm)](https://github.com/Hesvm).

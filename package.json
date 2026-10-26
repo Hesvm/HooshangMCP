@@ -44,6 +44,8 @@
     "api-client.js",
     "auth-manager.js",
     "browser-client.js",
+    "browser-extractor.js",
+    "config-installer.js",
     "image-generator.js",
     "video-generator.js",
     "README.md",
